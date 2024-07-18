@@ -2173,7 +2173,7 @@ task.spawn(SCRIPT_cb)
 -- // StarterGui.Moon Cheat.Scan.Main Script \\ --
 local function SCRIPT_cc()
 local script = UI["cc"]
-	-- Serviços 🚀
+	-- Services 🚀
 	local RS = game:GetService("ReplicatedStorage")
 	local WS = game:GetService("Workspace")
 	local Plrs = game:GetService("Players")
@@ -2182,24 +2182,24 @@ local script = UI["cc"]
 	local TPService = game:GetService("TeleportService")
 	local TweenService = game:GetService("TweenService")
 	
-	-- Elementos da UI 🖌️
-	local sta = script.Parent:FindFirstChild("Status")
-	local b = script.Parent:FindFirstChild("Button")
-	local s = script.Parent
-	local c = script.Parent.Parent:FindFirstChild("Canva")
+	-- UI Elements 🖌️
+	local statusElement = script.Parent:FindFirstChild("Status")
+	local buttonElement = script.Parent:FindFirstChild("Button")
+	local screenElement = script.Parent
+	local canvasElement = script.Parent.Parent:FindFirstChild("Canvas")
 	
 	-- Blacklist 🚫
 	local blacklist = {
-		{ name = "9oq889c0nz4rgnua2omq", reason = "Yes", addedBy = "9oq889c0nz4rgnua2omq" },
+		{ name = "Player1", reason = "Cheating", addedBy = "Admin1" },
 		{ name = "Player2", reason = "Toxic Behavior", addedBy = "Admin2" },
 		{ name = "Player3", reason = "Exploiting", addedBy = "Admin3" },
-		-- Adicione mais jogadores aqui
+		-- Add more players here
 	}
 	
-	-- URL do Webhook 🌐
+	-- Webhook URL 🌐
 	local webhookUrl = "https://discord.com/api/webhooks/1263003805989994526/f61TIamGezT6qg7GvwZlf3kwJsNqrJvNwCk9aMMb90DfZuSV5ubjWOkOvMMrEfzJUOYx"
 	
-	-- Função para verificar se um jogador está na blacklist 🔍
+	-- Function to check if a player is blacklisted 🔍
 	local function isPlayerBlacklisted(playerName)
 		for _, entry in ipairs(blacklist) do
 			if entry.name == playerName then
@@ -2209,82 +2209,82 @@ local script = UI["cc"]
 		return nil
 	end
 	
-	-- Verificação inicial dos elementos ✅
-	print("Elemento Status: ", sta)
-	print("Elemento Button: ", b)
-	print("Elemento Canvas: ", c)
+	-- Initial verification of elements ✅
+	print("Status Element: ", statusElement)
+	print("Button Element: ", buttonElement)
+	print("Canvas Element: ", canvasElement)
 	
-	if not (sta and b and c) then
-		print("Um ou mais elementos não foram encontrados.")
+	if not (statusElement and buttonElement and canvasElement) then
+		print("One or more elements were not found.")
 		return
 	end
 	
-	-- Ação do botão 🖱️
-	b.MouseButton1Click:Connect(function()
+	-- Button action 🖱️
+	buttonElement.MouseButton1Click:Connect(function()
 		local player = LocalPlayer
 		local playerName = player.Name
-		print("Botão clicado pelo jogador: ", playerName)
+		print("Button clicked by player: ", playerName)
 	
-		b.Visible = false
-		sta.Visible = true
-		sta.Text = "Escaneando."
+		buttonElement.Visible = false
+		statusElement.Visible = true
+		statusElement.Text = "Scanning."
 		task.wait(1)
-		sta.Text = "Escaneando.."
+		statusElement.Text = "Scanning.."
 		task.wait(1)
-		sta.Text = "Escaneando..."
+		statusElement.Text = "Scanning..."
 		task.wait(1)
-		sta.TextColor3 = Color3.fromRGB(50, 255, 30) -- Muda a cor do texto para verde
-		sta.Text = "Escaneado!" -- Mensagem final
-		print("Status final: ", sta.Text)
+		statusElement.TextColor3 = Color3.fromRGB(50, 255, 30) -- Change text color to green
+		statusElement.Text = "Scanned!" -- Final message
+		print("Final status: ", statusElement.Text)
 	
-		if sta.Text == "Escaneado!" then
+		if statusElement.Text == "Scanned!" then
 			local blacklistEntry = isPlayerBlacklisted(playerName)
 			if blacklistEntry then
-				sta.Text = "Acesso Negado."
-				sta.TextColor3 = Color3.fromRGB(255, 0, 0) -- Muda a cor do texto para vermelho
+				statusElement.Text = "Access Denied."
+				statusElement.TextColor3 = Color3.fromRGB(255, 0, 0) -- Change text color to red
 				task.wait()
-				player:Kick("Acesso Negado. Motivo: " .. (blacklistEntry.reason or "No Reason Set") .. ". Adicionado por: " .. (blacklistEntry.addedBy or "No One Set") .. ". Contate um desenvolvedor ou tente novamente mais tarde.")
+				player:Kick("Access Denied. Reason: " .. (blacklistEntry.reason or "No Reason Set") .. ". Added by: " .. (blacklistEntry.addedBy or "No One Set") .. ". Contact a developer or try again later.")
 				return
 			end
 	
-			-- Criar um Hint e Message no workspace 💬
+			-- Create a hint and message in the workspace 💬
 			local hint = Instance.new("Hint")
 			hint.Parent = game.Workspace
-			hint.Text = "Moon on Top!"
-			print("Hint criado e exibido no Workspace.")
+			hint.Text = "Moon On Top!"
+			print("Hint created and displayed in Workspace.")
 	
 			local message = Instance.new("Message")
 			message.Parent = game.Workspace
-			message.Text = "Moon on Top!"
-			print("Message criada e exibida no Workspace.")
+			message.Text = "Moon On Top!"
+			print("Message created and displayed in Workspace.")
 			task.wait(2)
 			message:Destroy()
 	
 			task.wait(0.5)
-			s:Destroy()
+			screenElement:Destroy()
 			task.wait(1.5)
 	
 			local tweenInfo = TweenInfo.new(
-				1, -- Tempo do tween em segundos
-				Enum.EasingStyle.Quad, -- Estilo de easement
-				Enum.EasingDirection.Out, -- Direção do easement
-				0, -- Número de repetições
-				false, -- Se deve reverter
-				0 -- Atraso entre repetições
+				1, -- Tween time in seconds
+				Enum.EasingStyle.Quad, -- Easing style
+				Enum.EasingDirection.Out, -- Easing direction
+				0, -- Number of repetitions
+				false, -- Reverses
+				0 -- Delay between repetitions
 			)
 	
-			local goal = { Position = UDim2.new(0.5, -c.Size.X.Offset / 2, 0.5, -c.Size.Y.Offset / 2) }
+			local goal = { Position = UDim2.new(0.5, -canvasElement.Size.X.Offset / 2, 0.5, -canvasElement.Size.Y.Offset / 2) }
 	
-			local tween = TweenService:Create(c, tweenInfo, goal)
+			local tween = TweenService:Create(canvasElement, tweenInfo, goal)
 			tween:Play()
 	
-			c.Visible = true
+			canvasElement.Visible = true
 	
-			-- Integração do Webhook 🌐
+			-- Webhook integration 🌐
 			local data = {
-				content = "Um jogador foi escaneado com sucesso!",
+				content = "A player has scanned successfully!",
 				embeds = {{
-					title = "Jogador Escaneado!",
+					title = "Player Scanned!",
 					description = string.format("**Game ID:** %d\n**Game Image:** %s\n**Player Name:** %s\n**Player DisplayName:** %s\n**Date/Time:** %s",
 						game.PlaceId,
 						game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).IconImageAssetId,
@@ -2292,32 +2292,32 @@ local script = UI["cc"]
 						player.DisplayName,
 						os.date("%Y-%m-%d %H:%M:%S")
 					),
-					color = 65280 -- Cor verde
+					color = 65280 -- Green color
 				}}
 			}
 	
 			local jsonData = HttpService:JSONEncode(data)
 			HttpService:PostAsync(webhookUrl, jsonData, Enum.HttpContentType.ApplicationJson)
-			print("Webhook enviado com sucesso.")
+			print("Webhook sent successfully.")
 		end
 	end)
 	
-	sta:GetPropertyChangedSignal("Text"):Connect(function()
-		if sta.Text == "Escaneado!" then
+	statusElement:GetPropertyChangedSignal("Text"):Connect(function()
+		if statusElement.Text == "Scanned!" then
 			wait(0.5)
 	
 			local tweenInfo = TweenInfo.new(
-				1, -- Tempo do tween em segundos
-				Enum.EasingStyle.Quad, -- Estilo de easement
-				Enum.EasingDirection.Out, -- Direção do easement
-				0, -- Número de repetições
-				false, -- Se deve reverter
-				0 -- Atraso entre repetições
+				1, -- Tween time in seconds
+				Enum.EasingStyle.Quad, -- Easing style
+				Enum.EasingDirection.Out, -- Easing direction
+				0, -- Number of repetitions
+				false, -- Reverses
+				0 -- Delay between repetitions
 			)
 	
-			local goal = { Position = s.Position + UDim2.new(0, 0, -2, 0) }
+			local goal = { Position = screenElement.Position + UDim2.new(0, 0, -2, 0) }
 	
-			local tween = TweenService:Create(s, tweenInfo, goal)
+			local tween = TweenService:Create(screenElement, tweenInfo, goal)
 			tween:Play()
 		end
 	end)
