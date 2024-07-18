@@ -1,6 +1,6 @@
 -- // GUI TO LUA \\ --
 
--- // INSTANCES: 56 | SCRIPTS: 11 | MODULES: 0 \\ --
+-- // INSTANCES: 227 | SCRIPTS: 26 | MODULES: 0 \\ --
 
 local UI = {}
 
@@ -12,11 +12,10 @@ UI["1"]["ResetOnSpawn"] = false
 
 -- // StarterGui.Moon Cheat.Canva \\ --
 UI["2"] = Instance.new("Frame", UI["1"])
-UI["2"]["Visible"] = false
 UI["2"]["BorderSizePixel"] = 0
 UI["2"]["BackgroundColor3"] = Color3.fromRGB(129, 135, 255)
 UI["2"]["Size"] = UDim2.new(0, 690, 0, 388)
-UI["2"]["Position"] = UDim2.new(0.13061, 0, 0.03762, 0)
+UI["2"]["Position"] = UDim2.new(0.129, 0, 0.048, 0)
 UI["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
 UI["2"]["Name"] = [[Canva]]
 
@@ -38,506 +37,1567 @@ UI["4"]["Name"] = [[Background]]
 UI["5"] = Instance.new("UICorner", UI["4"])
 
 
--- // StarterGui.Moon Cheat.Canva.Background.Monaco \\ --
-UI["6"] = Instance.new("ScrollingFrame", UI["4"])
-UI["6"]["Visible"] = false
-UI["6"]["Active"] = true
-UI["6"]["BorderSizePixel"] = 0
-UI["6"]["CanvasSize"] = UDim2.new(0, 0, 5, 0)
-UI["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["6"]["Name"] = [[Monaco]]
-UI["6"]["Size"] = UDim2.new(0, 450, 0, 289)
-UI["6"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0)
-UI["6"]["Position"] = UDim2.new(0.348, 0, 0.1517, 0)
-UI["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["6"]["BackgroundTransparency"] = 1
-
--- // StarterGui.Moon Cheat.Canva.Background.Monaco.Monaco \\ --
-UI["7"] = Instance.new("TextBox", UI["6"])
-UI["7"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
-UI["7"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255)
-UI["7"]["ZIndex"] = 3
-UI["7"]["BorderSizePixel"] = 0
-UI["7"]["TextXAlignment"] = Enum.TextXAlignment.Left
-UI["7"]["TextSize"] = 14
-UI["7"]["Name"] = [[Monaco]]
-UI["7"]["TextYAlignment"] = Enum.TextYAlignment.Top
-UI["7"]["BackgroundColor3"] = Color3.fromRGB(148, 164, 255)
-UI["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["7"]["MultiLine"] = true
-UI["7"]["PlaceholderText"] = [[Print("Hello World")]]
-UI["7"]["Size"] = UDim2.new(1, 0, 1, 0)
-UI["7"]["Position"] = UDim2.new(-0.00106, 0, -0, 0)
-UI["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["7"]["Text"] = [[]]
-UI["7"]["BackgroundTransparency"] = 0.7
-
--- // StarterGui.Moon Cheat.Canva.Background.Monaco.Monaco.UICorner \\ --
-UI["8"] = Instance.new("UICorner", UI["7"])
-UI["8"]["CornerRadius"] = UDim.new(0, 6)
-
--- // StarterGui.Moon Cheat.Canva.Background.Monaco.UICorner \\ --
-UI["9"] = Instance.new("UICorner", UI["6"])
-UI["9"]["CornerRadius"] = UDim.new(0, 6)
-
--- // StarterGui.Moon Cheat.Canva.Background.Clear \\ --
-UI["a"] = Instance.new("ImageButton", UI["4"])
-UI["a"]["BorderSizePixel"] = 0
-UI["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["a"]["Image"] = [[rbxassetid://18518548141]]
-UI["a"]["Size"] = UDim2.new(0, 40, 0, 40)
-UI["a"]["BackgroundTransparency"] = 1
-UI["a"]["Name"] = [[Clear]]
-UI["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["a"]["Visible"] = false
-UI["a"]["Position"] = UDim2.new(0.84493, 0, 0.89691, 0)
-
--- // StarterGui.Moon Cheat.Canva.Background.Clear.Clear Script \\ --
-UI["b"] = Instance.new("LocalScript", UI["a"])
-UI["b"]["Name"] = [[Clear Script]]
-
--- // StarterGui.Moon Cheat.Canva.Background.Exec \\ --
-UI["c"] = Instance.new("ImageButton", UI["4"])
-UI["c"]["BorderSizePixel"] = 0
-UI["c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["c"]["Image"] = [[rbxassetid://18518509818]]
-UI["c"]["Size"] = UDim2.new(0, 35, 0, 35)
-UI["c"]["BackgroundTransparency"] = 1
-UI["c"]["Name"] = [[Exec]]
-UI["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["c"]["Visible"] = false
-UI["c"]["Position"] = UDim2.new(0.91159, 0, 0.90979, 0)
-
--- // StarterGui.Moon Cheat.Canva.Background.Exec.Execute Script \\ --
-UI["d"] = Instance.new("LocalScript", UI["c"])
-UI["d"]["Name"] = [[Execute Script]]
-
 -- // StarterGui.Moon Cheat.Canva.Dragify \\ --
-UI["e"] = Instance.new("LocalScript", UI["2"])
-UI["e"]["Name"] = [[Dragify]]
+UI["6"] = Instance.new("LocalScript", UI["2"])
+UI["6"]["Name"] = [[Dragify]]
 
 -- // StarterGui.Moon Cheat.Canva.Logo \\ --
-UI["f"] = Instance.new("ImageLabel", UI["2"])
-UI["f"]["ZIndex"] = 564564
-UI["f"]["BorderSizePixel"] = 0
-UI["f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["f"]["Image"] = [[rbxassetid://18518737392]]
-UI["f"]["Size"] = UDim2.new(0, 50, 0, 50)
-UI["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["f"]["BackgroundTransparency"] = 1
-UI["f"]["Name"] = [[Logo]]
-UI["f"]["Position"] = UDim2.new(0.01739, 0, 0.02062, 0)
+UI["7"] = Instance.new("ImageLabel", UI["2"])
+UI["7"]["ZIndex"] = 564564
+UI["7"]["BorderSizePixel"] = 0
+UI["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["7"]["Image"] = [[rbxassetid://18518737392]]
+UI["7"]["Size"] = UDim2.new(0, 50, 0, 50)
+UI["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["7"]["BackgroundTransparency"] = 1
+UI["7"]["Name"] = [[Logo]]
+UI["7"]["Position"] = UDim2.new(0.01739, 0, 0.02062, 0)
 
 -- // StarterGui.Moon Cheat.Canva.Logo.Text \\ --
-UI["10"] = Instance.new("TextLabel", UI["f"])
-UI["10"]["TextWrapped"] = true
-UI["10"]["TextStrokeTransparency"] = 0
-UI["10"]["ZIndex"] = 23432
-UI["10"]["BorderSizePixel"] = 0
-UI["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["10"]["TextSize"] = 38
-UI["10"]["FontFace"] = Font.new([[rbxassetid://12187607722]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["10"]["TextColor3"] = Color3.fromRGB(152, 162, 255)
-UI["10"]["BackgroundTransparency"] = 1
-UI["10"]["Size"] = UDim2.new(0, 70, 0, 46)
-UI["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["10"]["Text"] = [[Moon]]
-UI["10"]["Name"] = [[Text]]
-UI["10"]["Position"] = UDim2.new(1.01517, 0, 0.06897, 0)
+UI["8"] = Instance.new("TextLabel", UI["7"])
+UI["8"]["TextWrapped"] = true
+UI["8"]["TextStrokeTransparency"] = 0
+UI["8"]["ZIndex"] = 23432
+UI["8"]["BorderSizePixel"] = 0
+UI["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["8"]["TextSize"] = 38
+UI["8"]["FontFace"] = Font.new([[rbxassetid://12187607722]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["8"]["TextColor3"] = Color3.fromRGB(152, 162, 255)
+UI["8"]["BackgroundTransparency"] = 1
+UI["8"]["Size"] = UDim2.new(0, 70, 0, 46)
+UI["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8"]["Text"] = [[Moon]]
+UI["8"]["Name"] = [[Text]]
+UI["8"]["Position"] = UDim2.new(1.01517, 0, 0.06897, 0)
 
 -- // StarterGui.Moon Cheat.Canva.Ad \\ --
-UI["11"] = Instance.new("Frame", UI["2"])
-UI["11"]["BorderSizePixel"] = 0
-UI["11"]["BackgroundColor3"] = Color3.fromRGB(129, 135, 255)
-UI["11"]["Size"] = UDim2.new(0, 690, 0, 127)
-UI["11"]["Position"] = UDim2.new(0, 0, 1.04124, 0)
-UI["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["11"]["Name"] = [[Ad]]
+UI["9"] = Instance.new("Frame", UI["2"])
+UI["9"]["BorderSizePixel"] = 0
+UI["9"]["BackgroundColor3"] = Color3.fromRGB(129, 135, 255)
+UI["9"]["Size"] = UDim2.new(0, 690, 0, 127)
+UI["9"]["Position"] = UDim2.new(0, 0, 1.04124, 0)
+UI["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["9"]["Name"] = [[Ad]]
 
 -- // StarterGui.Moon Cheat.Canva.Ad.UICorner \\ --
-UI["12"] = Instance.new("UICorner", UI["11"])
+UI["a"] = Instance.new("UICorner", UI["9"])
 
 
 -- // StarterGui.Moon Cheat.Canva.Ad.1 \\ --
-UI["13"] = Instance.new("TextLabel", UI["11"])
-UI["13"]["TextWrapped"] = true
-UI["13"]["BorderSizePixel"] = 0
-UI["13"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["13"]["TextSize"] = 38
-UI["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-UI["13"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["13"]["BackgroundTransparency"] = 1
-UI["13"]["Size"] = UDim2.new(0, 381, 0, 53)
-UI["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["13"]["Text"] = [[ADS]]
-UI["13"]["Name"] = [[1]]
-UI["13"]["Position"] = UDim2.new(0.22319, 0, 0, 0)
+UI["b"] = Instance.new("TextLabel", UI["9"])
+UI["b"]["TextWrapped"] = true
+UI["b"]["BorderSizePixel"] = 0
+UI["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["b"]["TextSize"] = 38
+UI["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["b"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["b"]["BackgroundTransparency"] = 1
+UI["b"]["Size"] = UDim2.new(0, 381, 0, 53)
+UI["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b"]["Text"] = [[ADS]]
+UI["b"]["Name"] = [[1]]
+UI["b"]["Position"] = UDim2.new(0.22319, 0, 0, 0)
 
 -- // StarterGui.Moon Cheat.Canva.Ad.2 \\ --
-UI["14"] = Instance.new("TextLabel", UI["11"])
-UI["14"]["TextWrapped"] = true
-UI["14"]["BorderSizePixel"] = 0
-UI["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["14"]["TextSize"] = 38
-UI["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-UI["14"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["14"]["BackgroundTransparency"] = 1
-UI["14"]["Size"] = UDim2.new(0, 381, 0, 49)
-UI["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["14"]["Text"] = [[In Progress]]
-UI["14"]["Name"] = [[2]]
-UI["14"]["Position"] = UDim2.new(0.22319, 0, 0.41732, 0)
+UI["c"] = Instance.new("TextLabel", UI["9"])
+UI["c"]["TextWrapped"] = true
+UI["c"]["BorderSizePixel"] = 0
+UI["c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["c"]["TextSize"] = 38
+UI["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["c"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["c"]["BackgroundTransparency"] = 1
+UI["c"]["Size"] = UDim2.new(0, 381, 0, 49)
+UI["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c"]["Text"] = [[In Progress]]
+UI["c"]["Name"] = [[2]]
+UI["c"]["Position"] = UDim2.new(0.22319, 0, 0.41732, 0)
 
 -- // StarterGui.Moon Cheat.Canva.Ad.Ads \\ --
-UI["15"] = Instance.new("ImageLabel", UI["11"])
-UI["15"]["BorderSizePixel"] = 0
-UI["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["15"]["Image"] = [[rbxassetid://18526958587]]
-UI["15"]["Size"] = UDim2.new(1, 0, 1, 0)
-UI["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["15"]["BackgroundTransparency"] = 1
-UI["15"]["Name"] = [[Ads]]
+UI["d"] = Instance.new("ImageLabel", UI["9"])
+UI["d"]["BorderSizePixel"] = 0
+UI["d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["d"]["Image"] = [[rbxassetid://18526958587]]
+UI["d"]["Size"] = UDim2.new(1, 0, 1, 0)
+UI["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["d"]["BackgroundTransparency"] = 1
+UI["d"]["Name"] = [[Ads]]
 
 -- // StarterGui.Moon Cheat.Canva.Ad.Ads.UICorner \\ --
-UI["16"] = Instance.new("UICorner", UI["15"])
+UI["e"] = Instance.new("UICorner", UI["d"])
 
 
 -- // StarterGui.Moon Cheat.Canva.Ad.LocalScript \\ --
-UI["17"] = Instance.new("LocalScript", UI["11"])
+UI["f"] = Instance.new("LocalScript", UI["9"])
 
 
 -- // StarterGui.Moon Cheat.Canva.Tab2B \\ --
-UI["18"] = Instance.new("ImageButton", UI["2"])
-UI["18"]["BorderSizePixel"] = 0
-UI["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["18"]["ImageColor3"] = Color3.fromRGB(0, 0, 0)
-UI["18"]["ZIndex"] = 3
-UI["18"]["Image"] = [[rbxassetid://18522319598]]
-UI["18"]["Size"] = UDim2.new(0, 51, 0, 52)
-UI["18"]["BackgroundTransparency"] = 1
-UI["18"]["Name"] = [[Tab2B]]
-UI["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["18"]["Position"] = UDim2.new(0.01739, 0, 0.32216, 0)
+UI["10"] = Instance.new("ImageButton", UI["2"])
+UI["10"]["BorderSizePixel"] = 0
+UI["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["10"]["ImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["10"]["ZIndex"] = 3
+UI["10"]["Image"] = [[rbxassetid://18522319598]]
+UI["10"]["Size"] = UDim2.new(0, 51, 0, 52)
+UI["10"]["BackgroundTransparency"] = 1
+UI["10"]["Name"] = [[Tab2B]]
+UI["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["10"]["Position"] = UDim2.new(0.01739, 0, 0.32216, 0)
 
 -- // StarterGui.Moon Cheat.Canva.Tab1B \\ --
-UI["19"] = Instance.new("ImageButton", UI["2"])
-UI["19"]["BorderSizePixel"] = 0
-UI["19"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["19"]["ImageColor3"] = Color3.fromRGB(0, 0, 0)
-UI["19"]["ZIndex"] = 3
-UI["19"]["Image"] = [[rbxassetid://18522329069]]
-UI["19"]["Size"] = UDim2.new(0, 51, 0, 52)
-UI["19"]["BackgroundTransparency"] = 1
-UI["19"]["Name"] = [[Tab1B]]
-UI["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["19"]["Position"] = UDim2.new(0.01739, 0, 0.18814, 0)
+UI["11"] = Instance.new("ImageButton", UI["2"])
+UI["11"]["BorderSizePixel"] = 0
+UI["11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["11"]["ImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["11"]["ZIndex"] = 3
+UI["11"]["Image"] = [[rbxassetid://18522329069]]
+UI["11"]["Size"] = UDim2.new(0, 51, 0, 52)
+UI["11"]["BackgroundTransparency"] = 1
+UI["11"]["Name"] = [[Tab1B]]
+UI["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["11"]["Position"] = UDim2.new(0.01739, 0, 0.18814, 0)
 
 -- // StarterGui.Moon Cheat.Canva.Close \\ --
-UI["1a"] = Instance.new("TextButton", UI["2"])
-UI["1a"]["BorderSizePixel"] = 0
-UI["1a"]["TextSize"] = 34
-UI["1a"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
-UI["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["1a"]["FontFace"] = Font.new([[rbxassetid://12187607722]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["1a"]["Size"] = UDim2.new(0, 60, 0, 50)
-UI["1a"]["BackgroundTransparency"] = 1
-UI["1a"]["Name"] = [[Close]]
-UI["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["1a"]["Text"] = [[Close]]
-UI["1a"]["Position"] = UDim2.new(0.9029, 0, 0, 0)
+UI["12"] = Instance.new("TextButton", UI["2"])
+UI["12"]["BorderSizePixel"] = 0
+UI["12"]["TextSize"] = 34
+UI["12"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["12"]["FontFace"] = Font.new([[rbxassetid://12187607722]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["12"]["Size"] = UDim2.new(0, 60, 0, 50)
+UI["12"]["BackgroundTransparency"] = 1
+UI["12"]["Name"] = [[Close]]
+UI["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["12"]["Text"] = [[Close]]
+UI["12"]["Position"] = UDim2.new(0.9029, 0, 0, 0)
 
 -- // StarterGui.Moon Cheat.Canva.Close.Close \\ --
-UI["1b"] = Instance.new("LocalScript", UI["1a"])
-UI["1b"]["Name"] = [[Close]]
+UI["13"] = Instance.new("LocalScript", UI["12"])
+UI["13"]["Name"] = [[Close]]
 
--- // StarterGui.Moon Cheat.Canva.Tab2 \\ --
-UI["1c"] = Instance.new("Frame", UI["2"])
-UI["1c"]["Visible"] = false
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab \\ --
+UI["14"] = Instance.new("Frame", UI["2"])
+UI["14"]["BorderSizePixel"] = 0
+UI["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["14"]["Size"] = UDim2.new(1, 0, 1, 0)
+UI["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["14"]["Name"] = [[Scripts Tab]]
+UI["14"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Search \\ --
+UI["15"] = Instance.new("TextBox", UI["14"])
+UI["15"]["CursorPosition"] = -1
+UI["15"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["15"]["PlaceholderColor3"] = Color3.fromRGB(68, 68, 68)
+UI["15"]["BorderSizePixel"] = 0
+UI["15"]["TextWrapped"] = true
+UI["15"]["TextSize"] = 30
+UI["15"]["Name"] = [[Search]]
+UI["15"]["BackgroundColor3"] = Color3.fromRGB(165, 158, 255)
+UI["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["15"]["RichText"] = true
+UI["15"]["PlaceholderText"] = [[Search For a Script]]
+UI["15"]["Size"] = UDim2.new(0, 369, 0, 42)
+UI["15"]["Position"] = UDim2.new(0.27246, 0, 0.0799, 0)
+UI["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["15"]["Text"] = [[]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Search.UICorner \\ --
+UI["16"] = Instance.new("UICorner", UI["15"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Search.Search Script \\ --
+UI["17"] = Instance.new("LocalScript", UI["15"])
+UI["17"]["Name"] = [[Search Script]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts \\ --
+UI["18"] = Instance.new("Frame", UI["14"])
+UI["18"]["BorderSizePixel"] = 0
+UI["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["18"]["Size"] = UDim2.new(0.88986, 0, 0.79124, 0)
+UI["18"]["Position"] = UDim2.new(0.1, 0, 0.20876, 0)
+UI["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["18"]["Name"] = [[Scripts]]
+UI["18"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts \\ --
+UI["19"] = Instance.new("ScrollingFrame", UI["18"])
+UI["19"]["Active"] = true
+UI["19"]["BorderSizePixel"] = 0
+UI["19"]["CanvasSize"] = UDim2.new(0, 0, 4, 0)
+UI["19"]["CanvasPosition"] = Vector2.new(0, 600)
+UI["19"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["19"]["Name"] = [[Scripts]]
+UI["19"]["Size"] = UDim2.new(1, 0, 0.98371, 0)
+UI["19"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["19"]["Position"] = UDim2.new(0, 0, 0.01629, 0)
+UI["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["19"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Infinite Yield \\ --
+UI["1a"] = Instance.new("Frame", UI["19"])
+UI["1a"]["BorderSizePixel"] = 0
+UI["1a"]["BackgroundColor3"] = Color3.fromRGB(104, 104, 104)
+UI["1a"]["Size"] = UDim2.new(0.40717, 0, 0.4886, 0)
+UI["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["1a"]["Name"] = [[Infinite Yield]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Infinite Yield.UICorner \\ --
+UI["1b"] = Instance.new("UICorner", UI["1a"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Infinite Yield.Script_Image \\ --
+UI["1c"] = Instance.new("ImageLabel", UI["1a"])
 UI["1c"]["BorderSizePixel"] = 0
 UI["1c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["1c"]["Image"] = [[rbxassetid://18543010428]]
 UI["1c"]["Size"] = UDim2.new(1, 0, 1, 0)
 UI["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["1c"]["Name"] = [[Tab2]]
 UI["1c"]["BackgroundTransparency"] = 1
+UI["1c"]["Name"] = [[Script_Image]]
 
--- // StarterGui.Moon Cheat.Canva.Tab1 \\ --
-UI["1d"] = Instance.new("Frame", UI["2"])
-UI["1d"]["Visible"] = false
-UI["1d"]["BorderSizePixel"] = 0
-UI["1d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["1d"]["Size"] = UDim2.new(1, 0, 1, 0)
-UI["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["1d"]["Name"] = [[Tab1]]
-UI["1d"]["BackgroundTransparency"] = 1
-
--- // StarterGui.Moon Cheat.Canva.Tab1.Kill \\ --
-UI["1e"] = Instance.new("TextButton", UI["1d"])
-UI["1e"]["TextWrapped"] = true
-UI["1e"]["BorderSizePixel"] = 0
-UI["1e"]["TextSize"] = 30
-UI["1e"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["1e"]["BackgroundColor3"] = Color3.fromRGB(145, 145, 255)
-UI["1e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["1e"]["Size"] = UDim2.new(0, 100, 0, 50)
-UI["1e"]["Name"] = [[Kill]]
-UI["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["1e"]["Text"] = [[Kill]]
-UI["1e"]["Position"] = UDim2.new(0.17971, 0, 0.14691, 0)
-
--- // StarterGui.Moon Cheat.Canva.Tab1.Kill.Kill \\ --
-UI["1f"] = Instance.new("LocalScript", UI["1e"])
-UI["1f"]["Name"] = [[Kill]]
-
--- // StarterGui.Moon Cheat.Canva.Tab1.Kill.UICorner \\ --
-UI["20"] = Instance.new("UICorner", UI["1e"])
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Infinite Yield.Script_Image.UICorner \\ --
+UI["1d"] = Instance.new("UICorner", UI["1c"])
 
 
--- // StarterGui.Moon Cheat.Canva.Tab3B \\ --
-UI["21"] = Instance.new("ImageButton", UI["2"])
-UI["21"]["BorderSizePixel"] = 0
-UI["21"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["21"]["ImageColor3"] = Color3.fromRGB(0, 0, 0)
-UI["21"]["ZIndex"] = 3
-UI["21"]["Image"] = [[rbxassetid://18522319598]]
-UI["21"]["Size"] = UDim2.new(0, 51, 0, 52)
-UI["21"]["BackgroundTransparency"] = 1
-UI["21"]["Name"] = [[Tab3B]]
-UI["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["21"]["Position"] = UDim2.new(0.01594, 0, 0.43299, 0)
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Infinite Yield.Script_Image.UIAspectRatioConstraint \\ --
+UI["1e"] = Instance.new("UIAspectRatioConstraint", UI["1c"])
+UI["1e"]["AspectRatio"] = 1.66667
 
--- // StarterGui.Moon Cheat.Canva.Config button \\ --
-UI["22"] = Instance.new("ImageButton", UI["2"])
-UI["22"]["BorderSizePixel"] = 0
-UI["22"]["BackgroundColor3"] = Color3.fromRGB(144, 179, 255)
-UI["22"]["ZIndex"] = 3
-UI["22"]["Image"] = [[http://www.roblox.com/asset/?id=7390123034]]
-UI["22"]["Size"] = UDim2.new(0, 51, 0, 52)
-UI["22"]["BackgroundTransparency"] = 1
-UI["22"]["Name"] = [[Config button]]
-UI["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["22"]["Position"] = UDim2.new(0.01739, 0, 0.8299, 0)
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Infinite Yield.Bottom \\ --
+UI["1f"] = Instance.new("Frame", UI["1a"])
+UI["1f"]["BorderSizePixel"] = 0
+UI["1f"]["BackgroundColor3"] = Color3.fromRGB(181, 171, 255)
+UI["1f"]["Size"] = UDim2.new(1, 0, 0.36667, 0)
+UI["1f"]["Position"] = UDim2.new(0, 0, 0.63333, 0)
+UI["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["1f"]["Name"] = [[Bottom]]
 
--- // StarterGui.Moon Cheat.Canva.Config button.Images/config \\ --
-UI["23"] = Instance.new("Decal", UI["22"])
-UI["23"]["Name"] = [[Images/config]]
-UI["23"]["Texture"] = [[http://www.roblox.com/asset/?id=7390123034]]
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Infinite Yield.Bottom.Ignore \\ --
+UI["20"] = Instance.new("Frame", UI["1f"])
+UI["20"]["BorderSizePixel"] = 0
+UI["20"]["BackgroundColor3"] = Color3.fromRGB(181, 171, 255)
+UI["20"]["Size"] = UDim2.new(1, 0, 0.27273, 0)
+UI["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["20"]["Name"] = [[Ignore]]
 
--- // StarterGui.Moon Cheat.Scan \\ --
-UI["24"] = Instance.new("Frame", UI["1"])
-UI["24"]["BorderSizePixel"] = 0
-UI["24"]["BackgroundColor3"] = Color3.fromRGB(129, 135, 255)
-UI["24"]["Size"] = UDim2.new(0, 400, 0, 244)
-UI["24"]["Position"] = UDim2.new(0.28458, 0, 0.2565, 0)
-UI["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["24"]["Name"] = [[Scan]]
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Infinite Yield.Bottom.Ignore.UIAspectRatioConstraint \\ --
+UI["21"] = Instance.new("UIAspectRatioConstraint", UI["20"])
+UI["21"]["AspectRatio"] = 16.66667
 
--- // StarterGui.Moon Cheat.Scan.Status \\ --
-UI["25"] = Instance.new("TextLabel", UI["24"])
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Infinite Yield.Bottom.UICorner \\ --
+UI["22"] = Instance.new("UICorner", UI["1f"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Infinite Yield.Bottom.Script_Name \\ --
+UI["23"] = Instance.new("TextLabel", UI["1f"])
+UI["23"]["TextWrapped"] = true
+UI["23"]["BorderSizePixel"] = 0
+UI["23"]["TextScaled"] = true
+UI["23"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["23"]["TextSize"] = 14
+UI["23"]["FontFace"] = Font.new([[rbxasset://fonts/families/Balthazar.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["23"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["23"]["BackgroundTransparency"] = 1
+UI["23"]["Size"] = UDim2.new(1, 0, 0.4, 0)
+UI["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["23"]["Text"] = [[Infinite Yield]]
+UI["23"]["Name"] = [[Script_Name]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Infinite Yield.Bottom.Script_Name.UIAspectRatioConstraint \\ --
+UI["24"] = Instance.new("UIAspectRatioConstraint", UI["23"])
+UI["24"]["AspectRatio"] = 11.36364
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Infinite Yield.Bottom.Execute_Script \\ --
+UI["25"] = Instance.new("TextButton", UI["1f"])
 UI["25"]["TextWrapped"] = true
-UI["25"]["ZIndex"] = 3
 UI["25"]["BorderSizePixel"] = 0
-UI["25"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["25"]["TextSize"] = 38
-UI["25"]["FontFace"] = Font.new([[rbxassetid://12187607722]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["25"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["25"]["BackgroundTransparency"] = 1
-UI["25"]["RichText"] = true
-UI["25"]["Size"] = UDim2.new(0, 273, 0, 60)
+UI["25"]["TextSize"] = 14
+UI["25"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["25"]["TextScaled"] = true
+UI["25"]["BackgroundColor3"] = Color3.fromRGB(112, 255, 117)
+UI["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/Balthazar.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["25"]["Size"] = UDim2.new(0.328, 0, 0.54545, 0)
+UI["25"]["Name"] = [[Execute_Script]]
 UI["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["25"]["Text"] = [[]]
-UI["25"]["Name"] = [[Status]]
-UI["25"]["Position"] = UDim2.new(0.1625, 0, 0.22328, 0)
+UI["25"]["Text"] = [[Execute]]
+UI["25"]["Position"] = UDim2.new(0.532, 0, 0.4, 0)
 
--- // StarterGui.Moon Cheat.Scan.Background \\ --
-UI["26"] = Instance.new("ImageLabel", UI["24"])
-UI["26"]["BorderSizePixel"] = 0
-UI["26"]["BackgroundColor3"] = Color3.fromRGB(129, 135, 255)
-UI["26"]["ImageColor3"] = Color3.fromRGB(114, 114, 114)
-UI["26"]["Image"] = [[http://www.roblox.com/asset/?id=64212796]]
-UI["26"]["Size"] = UDim2.new(1, 0, 1, 0)
-UI["26"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["26"]["Name"] = [[Background]]
-
--- // StarterGui.Moon Cheat.Scan.Background.UICorner \\ --
-UI["27"] = Instance.new("UICorner", UI["26"])
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Infinite Yield.Bottom.Execute_Script.UICorner \\ --
+UI["26"] = Instance.new("UICorner", UI["25"])
 
 
--- // StarterGui.Moon Cheat.Scan.UICorner \\ --
-UI["28"] = Instance.new("UICorner", UI["24"])
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Infinite Yield.Bottom.Execute_Script.Value \\ --
+UI["27"] = Instance.new("StringValue", UI["25"])
+UI["27"]["Value"] = [[loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Infinite Yield.Bottom.Execute_Script.Execute Script \\ --
+UI["28"] = Instance.new("LocalScript", UI["25"])
+UI["28"]["Name"] = [[Execute Script]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Infinite Yield.Bottom.Execute_Script.UIAspectRatioConstraint \\ --
+UI["29"] = Instance.new("UIAspectRatioConstraint", UI["25"])
+UI["29"]["AspectRatio"] = 2.73333
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Infinite Yield.Bottom.Copy_Script \\ --
+UI["2a"] = Instance.new("TextButton", UI["1f"])
+UI["2a"]["TextWrapped"] = true
+UI["2a"]["BorderSizePixel"] = 0
+UI["2a"]["TextSize"] = 14
+UI["2a"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2a"]["TextScaled"] = true
+UI["2a"]["BackgroundColor3"] = Color3.fromRGB(149, 135, 255)
+UI["2a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Balthazar.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["2a"]["Size"] = UDim2.new(0.328, 0, 0.54545, 0)
+UI["2a"]["Name"] = [[Copy_Script]]
+UI["2a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2a"]["Text"] = [[Copy]]
+UI["2a"]["Position"] = UDim2.new(0.148, 0, 0.4, 0)
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Infinite Yield.Bottom.Copy_Script.UICorner \\ --
+UI["2b"] = Instance.new("UICorner", UI["2a"])
 
 
--- // StarterGui.Moon Cheat.Scan.Drag \\ --
-UI["29"] = Instance.new("LocalScript", UI["24"])
-UI["29"]["Name"] = [[Drag]]
-
--- // StarterGui.Moon Cheat.Scan.Main Script \\ --
-UI["2a"] = Instance.new("LocalScript", UI["24"])
-UI["2a"]["Name"] = [[Main Script]]
-
--- // StarterGui.Moon Cheat.Scan.Button \\ --
-UI["2b"] = Instance.new("TextButton", UI["24"])
-UI["2b"]["BorderSizePixel"] = 0
-UI["2b"]["TextSize"] = 30
-UI["2b"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["2b"]["BackgroundColor3"] = Color3.fromRGB(101, 106, 201)
-UI["2b"]["FontFace"] = Font.new([[rbxassetid://12187607722]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["2b"]["ZIndex"] = 3
-UI["2b"]["Size"] = UDim2.new(0, 200, 0, 50)
-UI["2b"]["Name"] = [[Button]]
-UI["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["2b"]["Text"] = [[Scan]]
-UI["2b"]["Position"] = UDim2.new(0.25, 0, 0.52459, 0)
-
--- // StarterGui.Moon Cheat.Scan.Button.UICorner \\ --
-UI["2c"] = Instance.new("UICorner", UI["2b"])
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Infinite Yield.Bottom.Copy_Script.LocalScript \\ --
+UI["2c"] = Instance.new("LocalScript", UI["2a"])
 
 
--- // StarterGui.Moon Cheat.Scan.Logo \\ --
-UI["2d"] = Instance.new("ImageLabel", UI["24"])
-UI["2d"]["ZIndex"] = 564564
-UI["2d"]["BorderSizePixel"] = 0
-UI["2d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["2d"]["Image"] = [[rbxassetid://18518737392]]
-UI["2d"]["Size"] = UDim2.new(0, 50, 0, 50)
-UI["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["2d"]["BackgroundTransparency"] = 1
-UI["2d"]["Name"] = [[Logo]]
-UI["2d"]["Position"] = UDim2.new(0.01739, 0, 0.02062, 0)
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Infinite Yield.Bottom.Copy_Script.UIAspectRatioConstraint \\ --
+UI["2d"] = Instance.new("UIAspectRatioConstraint", UI["2a"])
+UI["2d"]["AspectRatio"] = 2.73333
 
--- // StarterGui.Moon Cheat.Scan.Logo.Text \\ --
-UI["2e"] = Instance.new("TextLabel", UI["2d"])
-UI["2e"]["TextWrapped"] = true
-UI["2e"]["TextStrokeTransparency"] = 0
-UI["2e"]["ZIndex"] = 23432
-UI["2e"]["BorderSizePixel"] = 0
-UI["2e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["2e"]["TextSize"] = 38
-UI["2e"]["FontFace"] = Font.new([[rbxassetid://12187607722]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["2e"]["TextColor3"] = Color3.fromRGB(152, 162, 255)
-UI["2e"]["BackgroundTransparency"] = 1
-UI["2e"]["Size"] = UDim2.new(0, 70, 0, 46)
-UI["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["2e"]["Text"] = [[Moon]]
-UI["2e"]["Name"] = [[Text]]
-UI["2e"]["Position"] = UDim2.new(1.01517, 0, 0.06897, 0)
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Infinite Yield.Bottom.UIAspectRatioConstraint \\ --
+UI["2e"] = Instance.new("UIAspectRatioConstraint", UI["1f"])
+UI["2e"]["AspectRatio"] = 4.54545
 
--- // StarterGui.Moon Cheat.Scan.Close \\ --
-UI["2f"] = Instance.new("TextButton", UI["24"])
-UI["2f"]["BorderSizePixel"] = 0
-UI["2f"]["TextSize"] = 30
-UI["2f"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["2f"]["BackgroundColor3"] = Color3.fromRGB(101, 106, 201)
-UI["2f"]["FontFace"] = Font.new([[rbxassetid://12187607722]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["2f"]["ZIndex"] = 3
-UI["2f"]["Size"] = UDim2.new(0, 45, 0, 44)
-UI["2f"]["BackgroundTransparency"] = 1
-UI["2f"]["Name"] = [[Close]]
-UI["2f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["2f"]["Text"] = [[X]]
-UI["2f"]["Position"] = UDim2.new(0.8875, 0, 0, 0)
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Infinite Yield.UIAspectRatioConstraint \\ --
+UI["2f"] = Instance.new("UIAspectRatioConstraint", UI["1a"])
+UI["2f"]["AspectRatio"] = 1.66667
 
--- // StarterGui.Moon Cheat.Scan.Close.UICorner \\ --
-UI["30"] = Instance.new("UICorner", UI["2f"])
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Dark Dex v4 \\ --
+UI["30"] = Instance.new("Frame", UI["19"])
+UI["30"]["BorderSizePixel"] = 0
+UI["30"]["BackgroundColor3"] = Color3.fromRGB(104, 104, 104)
+UI["30"]["Size"] = UDim2.new(0.40717, 0, 0.4886, 0)
+UI["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["30"]["Name"] = [[Dark Dex v4]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Dark Dex v4.UICorner \\ --
+UI["31"] = Instance.new("UICorner", UI["30"])
 
 
--- // StarterGui.Moon Cheat.Scan.Close.Close gui \\ --
-UI["31"] = Instance.new("LocalScript", UI["2f"])
-UI["31"]["Name"] = [[Close gui]]
-
--- // StarterGui.Moon Cheat.Hide/open \\ --
-UI["32"] = Instance.new("ImageButton", UI["1"])
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Dark Dex v4.Script_Image \\ --
+UI["32"] = Instance.new("ImageLabel", UI["30"])
 UI["32"]["BorderSizePixel"] = 0
-UI["32"]["BackgroundColor3"] = Color3.fromRGB(129, 135, 255)
-UI["32"]["Image"] = [[rbxassetid://18518737392]]
-UI["32"]["Size"] = UDim2.new(0, 60, 0, 60)
-UI["32"]["Name"] = [[Hide/open]]
+UI["32"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["32"]["Image"] = [[rbxassetid://18543051728]]
+UI["32"]["Size"] = UDim2.new(1, 0, 1, 0)
 UI["32"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["32"]["Visible"] = false
-UI["32"]["Position"] = UDim2.new(0.06029, 0, 0.2565, 0)
+UI["32"]["BackgroundTransparency"] = 1
+UI["32"]["Name"] = [[Script_Image]]
 
--- // StarterGui.Moon Cheat.Hide/open.UICorner \\ --
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Dark Dex v4.Script_Image.UICorner \\ --
 UI["33"] = Instance.new("UICorner", UI["32"])
 
 
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Dark Dex v4.Script_Image.UIAspectRatioConstraint \\ --
+UI["34"] = Instance.new("UIAspectRatioConstraint", UI["32"])
+UI["34"]["AspectRatio"] = 1.66667
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Dark Dex v4.Bottom \\ --
+UI["35"] = Instance.new("Frame", UI["30"])
+UI["35"]["BorderSizePixel"] = 0
+UI["35"]["BackgroundColor3"] = Color3.fromRGB(181, 171, 255)
+UI["35"]["Size"] = UDim2.new(1, 0, 0.36667, 0)
+UI["35"]["Position"] = UDim2.new(0, 0, 0.63333, 0)
+UI["35"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["35"]["Name"] = [[Bottom]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Dark Dex v4.Bottom.Ignore \\ --
+UI["36"] = Instance.new("Frame", UI["35"])
+UI["36"]["BorderSizePixel"] = 0
+UI["36"]["BackgroundColor3"] = Color3.fromRGB(181, 171, 255)
+UI["36"]["Size"] = UDim2.new(1, 0, 0.27273, 0)
+UI["36"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["36"]["Name"] = [[Ignore]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Dark Dex v4.Bottom.Ignore.UIAspectRatioConstraint \\ --
+UI["37"] = Instance.new("UIAspectRatioConstraint", UI["36"])
+UI["37"]["AspectRatio"] = 16.66667
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Dark Dex v4.Bottom.UICorner \\ --
+UI["38"] = Instance.new("UICorner", UI["35"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Dark Dex v4.Bottom.Script_Name \\ --
+UI["39"] = Instance.new("TextLabel", UI["35"])
+UI["39"]["TextWrapped"] = true
+UI["39"]["BorderSizePixel"] = 0
+UI["39"]["TextScaled"] = true
+UI["39"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["39"]["TextSize"] = 14
+UI["39"]["FontFace"] = Font.new([[rbxasset://fonts/families/Balthazar.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["39"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["39"]["BackgroundTransparency"] = 1
+UI["39"]["Size"] = UDim2.new(1, 0, 0.4, 0)
+UI["39"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["39"]["Text"] = [[Dark Dex v4]]
+UI["39"]["Name"] = [[Script_Name]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Dark Dex v4.Bottom.Script_Name.UIAspectRatioConstraint \\ --
+UI["3a"] = Instance.new("UIAspectRatioConstraint", UI["39"])
+UI["3a"]["AspectRatio"] = 11.36364
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Dark Dex v4.Bottom.Execute_Script \\ --
+UI["3b"] = Instance.new("TextButton", UI["35"])
+UI["3b"]["TextWrapped"] = true
+UI["3b"]["BorderSizePixel"] = 0
+UI["3b"]["TextSize"] = 14
+UI["3b"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["3b"]["TextScaled"] = true
+UI["3b"]["BackgroundColor3"] = Color3.fromRGB(112, 255, 117)
+UI["3b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Balthazar.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["3b"]["Size"] = UDim2.new(0.328, 0, 0.54545, 0)
+UI["3b"]["Name"] = [[Execute_Script]]
+UI["3b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["3b"]["Text"] = [[Execute]]
+UI["3b"]["Position"] = UDim2.new(0.532, 0, 0.4, 0)
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Dark Dex v4.Bottom.Execute_Script.UICorner \\ --
+UI["3c"] = Instance.new("UICorner", UI["3b"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Dark Dex v4.Bottom.Execute_Script.Value \\ --
+UI["3d"] = Instance.new("StringValue", UI["3b"])
+UI["3d"]["Value"] = [[loadstring(game:HttpGet("https://gist.githubusercontent.com/DinosaurXxX/b757fe011e7e600c0873f967fe427dc2/raw/ee5324771f017073fc30e640323ac2a9b3bfc550/dark%2520dex%2520v4"))()]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Dark Dex v4.Bottom.Execute_Script.Execute Script \\ --
+UI["3e"] = Instance.new("LocalScript", UI["3b"])
+UI["3e"]["Name"] = [[Execute Script]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Dark Dex v4.Bottom.Execute_Script.UIAspectRatioConstraint \\ --
+UI["3f"] = Instance.new("UIAspectRatioConstraint", UI["3b"])
+UI["3f"]["AspectRatio"] = 2.73333
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Dark Dex v4.Bottom.Copy_Script \\ --
+UI["40"] = Instance.new("TextButton", UI["35"])
+UI["40"]["TextWrapped"] = true
+UI["40"]["BorderSizePixel"] = 0
+UI["40"]["TextSize"] = 14
+UI["40"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["40"]["TextScaled"] = true
+UI["40"]["BackgroundColor3"] = Color3.fromRGB(149, 135, 255)
+UI["40"]["FontFace"] = Font.new([[rbxasset://fonts/families/Balthazar.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["40"]["Size"] = UDim2.new(0.328, 0, 0.54545, 0)
+UI["40"]["Name"] = [[Copy_Script]]
+UI["40"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["40"]["Text"] = [[Copy]]
+UI["40"]["Position"] = UDim2.new(0.148, 0, 0.4, 0)
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Dark Dex v4.Bottom.Copy_Script.UICorner \\ --
+UI["41"] = Instance.new("UICorner", UI["40"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Dark Dex v4.Bottom.Copy_Script.LocalScript \\ --
+UI["42"] = Instance.new("LocalScript", UI["40"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Dark Dex v4.Bottom.Copy_Script.UIAspectRatioConstraint \\ --
+UI["43"] = Instance.new("UIAspectRatioConstraint", UI["40"])
+UI["43"]["AspectRatio"] = 2.73333
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Dark Dex v4.Bottom.UIAspectRatioConstraint \\ --
+UI["44"] = Instance.new("UIAspectRatioConstraint", UI["35"])
+UI["44"]["AspectRatio"] = 4.54545
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Dark Dex v4.UIAspectRatioConstraint \\ --
+UI["45"] = Instance.new("UIAspectRatioConstraint", UI["30"])
+UI["45"]["AspectRatio"] = 1.66667
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Remote Spy V3 \\ --
+UI["46"] = Instance.new("Frame", UI["19"])
+UI["46"]["BorderSizePixel"] = 0
+UI["46"]["BackgroundColor3"] = Color3.fromRGB(104, 104, 104)
+UI["46"]["Size"] = UDim2.new(0.40717, 0, 0.4886, 0)
+UI["46"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["46"]["Name"] = [[Remote Spy V3]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Remote Spy V3.UICorner \\ --
+UI["47"] = Instance.new("UICorner", UI["46"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Remote Spy V3.Script_Image \\ --
+UI["48"] = Instance.new("ImageLabel", UI["46"])
+UI["48"]["BorderSizePixel"] = 0
+UI["48"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["48"]["Image"] = [[rbxassetid://18543063205]]
+UI["48"]["Size"] = UDim2.new(1, 0, 1, 0)
+UI["48"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["48"]["BackgroundTransparency"] = 1
+UI["48"]["Name"] = [[Script_Image]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Remote Spy V3.Script_Image.UICorner \\ --
+UI["49"] = Instance.new("UICorner", UI["48"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Remote Spy V3.Script_Image.UIAspectRatioConstraint \\ --
+UI["4a"] = Instance.new("UIAspectRatioConstraint", UI["48"])
+UI["4a"]["AspectRatio"] = 1.66667
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Remote Spy V3.Bottom \\ --
+UI["4b"] = Instance.new("Frame", UI["46"])
+UI["4b"]["BorderSizePixel"] = 0
+UI["4b"]["BackgroundColor3"] = Color3.fromRGB(181, 171, 255)
+UI["4b"]["Size"] = UDim2.new(1, 0, 0.36667, 0)
+UI["4b"]["Position"] = UDim2.new(0, 0, 0.63333, 0)
+UI["4b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4b"]["Name"] = [[Bottom]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Remote Spy V3.Bottom.Ignore \\ --
+UI["4c"] = Instance.new("Frame", UI["4b"])
+UI["4c"]["BorderSizePixel"] = 0
+UI["4c"]["BackgroundColor3"] = Color3.fromRGB(181, 171, 255)
+UI["4c"]["Size"] = UDim2.new(1, 0, 0.27273, 0)
+UI["4c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4c"]["Name"] = [[Ignore]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Remote Spy V3.Bottom.Ignore.UIAspectRatioConstraint \\ --
+UI["4d"] = Instance.new("UIAspectRatioConstraint", UI["4c"])
+UI["4d"]["AspectRatio"] = 16.66667
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Remote Spy V3.Bottom.UICorner \\ --
+UI["4e"] = Instance.new("UICorner", UI["4b"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Remote Spy V3.Bottom.Script_Name \\ --
+UI["4f"] = Instance.new("TextLabel", UI["4b"])
+UI["4f"]["TextWrapped"] = true
+UI["4f"]["BorderSizePixel"] = 0
+UI["4f"]["TextScaled"] = true
+UI["4f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["4f"]["TextSize"] = 14
+UI["4f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Balthazar.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["4f"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4f"]["BackgroundTransparency"] = 1
+UI["4f"]["Size"] = UDim2.new(1, 0, 0.4, 0)
+UI["4f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4f"]["Text"] = [[SimpleSpy V3]]
+UI["4f"]["Name"] = [[Script_Name]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Remote Spy V3.Bottom.Script_Name.UIAspectRatioConstraint \\ --
+UI["50"] = Instance.new("UIAspectRatioConstraint", UI["4f"])
+UI["50"]["AspectRatio"] = 11.36364
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Remote Spy V3.Bottom.Execute_Script \\ --
+UI["51"] = Instance.new("TextButton", UI["4b"])
+UI["51"]["TextWrapped"] = true
+UI["51"]["BorderSizePixel"] = 0
+UI["51"]["TextSize"] = 14
+UI["51"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["51"]["TextScaled"] = true
+UI["51"]["BackgroundColor3"] = Color3.fromRGB(112, 255, 117)
+UI["51"]["FontFace"] = Font.new([[rbxasset://fonts/families/Balthazar.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["51"]["Size"] = UDim2.new(0.328, 0, 0.54545, 0)
+UI["51"]["Name"] = [[Execute_Script]]
+UI["51"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["51"]["Text"] = [[Execute]]
+UI["51"]["Position"] = UDim2.new(0.532, 0, 0.4, 0)
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Remote Spy V3.Bottom.Execute_Script.UICorner \\ --
+UI["52"] = Instance.new("UICorner", UI["51"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Remote Spy V3.Bottom.Execute_Script.Value \\ --
+UI["53"] = Instance.new("StringValue", UI["51"])
+UI["53"]["Value"] = [[loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpyBeta.lua"))()]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Remote Spy V3.Bottom.Execute_Script.Execute Script \\ --
+UI["54"] = Instance.new("LocalScript", UI["51"])
+UI["54"]["Name"] = [[Execute Script]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Remote Spy V3.Bottom.Execute_Script.UIAspectRatioConstraint \\ --
+UI["55"] = Instance.new("UIAspectRatioConstraint", UI["51"])
+UI["55"]["AspectRatio"] = 2.73333
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Remote Spy V3.Bottom.Copy_Script \\ --
+UI["56"] = Instance.new("TextButton", UI["4b"])
+UI["56"]["TextWrapped"] = true
+UI["56"]["BorderSizePixel"] = 0
+UI["56"]["TextSize"] = 14
+UI["56"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["56"]["TextScaled"] = true
+UI["56"]["BackgroundColor3"] = Color3.fromRGB(149, 135, 255)
+UI["56"]["FontFace"] = Font.new([[rbxasset://fonts/families/Balthazar.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["56"]["Size"] = UDim2.new(0.328, 0, 0.54545, 0)
+UI["56"]["Name"] = [[Copy_Script]]
+UI["56"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["56"]["Text"] = [[Copy]]
+UI["56"]["Position"] = UDim2.new(0.148, 0, 0.4, 0)
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Remote Spy V3.Bottom.Copy_Script.UICorner \\ --
+UI["57"] = Instance.new("UICorner", UI["56"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Remote Spy V3.Bottom.Copy_Script.LocalScript \\ --
+UI["58"] = Instance.new("LocalScript", UI["56"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Remote Spy V3.Bottom.Copy_Script.UIAspectRatioConstraint \\ --
+UI["59"] = Instance.new("UIAspectRatioConstraint", UI["56"])
+UI["59"]["AspectRatio"] = 2.73333
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Remote Spy V3.Bottom.UIAspectRatioConstraint \\ --
+UI["5a"] = Instance.new("UIAspectRatioConstraint", UI["4b"])
+UI["5a"]["AspectRatio"] = 4.54545
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Remote Spy V3.UIAspectRatioConstraint \\ --
+UI["5b"] = Instance.new("UIAspectRatioConstraint", UI["46"])
+UI["5b"]["AspectRatio"] = 1.66667
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Adonis Bypass \\ --
+UI["5c"] = Instance.new("Frame", UI["19"])
+UI["5c"]["BorderSizePixel"] = 0
+UI["5c"]["BackgroundColor3"] = Color3.fromRGB(104, 104, 104)
+UI["5c"]["Size"] = UDim2.new(0.40717, 0, 0.4886, 0)
+UI["5c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["5c"]["Name"] = [[Adonis Bypass]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Adonis Bypass.UICorner \\ --
+UI["5d"] = Instance.new("UICorner", UI["5c"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Adonis Bypass.Script_Image \\ --
+UI["5e"] = Instance.new("ImageLabel", UI["5c"])
+UI["5e"]["BorderSizePixel"] = 0
+UI["5e"]["BackgroundColor3"] = Color3.fromRGB(7, 0, 41)
+UI["5e"]["Image"] = [[rbxassetid://18543093285]]
+UI["5e"]["Size"] = UDim2.new(1, 0, 1, 0)
+UI["5e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["5e"]["Name"] = [[Script_Image]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Adonis Bypass.Script_Image.UICorner \\ --
+UI["5f"] = Instance.new("UICorner", UI["5e"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Adonis Bypass.Script_Image.UIAspectRatioConstraint \\ --
+UI["60"] = Instance.new("UIAspectRatioConstraint", UI["5e"])
+UI["60"]["AspectRatio"] = 1.66667
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Adonis Bypass.Bottom \\ --
+UI["61"] = Instance.new("Frame", UI["5c"])
+UI["61"]["BorderSizePixel"] = 0
+UI["61"]["BackgroundColor3"] = Color3.fromRGB(181, 171, 255)
+UI["61"]["Size"] = UDim2.new(1, 0, 0.36667, 0)
+UI["61"]["Position"] = UDim2.new(0, 0, 0.63333, 0)
+UI["61"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["61"]["Name"] = [[Bottom]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Adonis Bypass.Bottom.Ignore \\ --
+UI["62"] = Instance.new("Frame", UI["61"])
+UI["62"]["BorderSizePixel"] = 0
+UI["62"]["BackgroundColor3"] = Color3.fromRGB(181, 171, 255)
+UI["62"]["Size"] = UDim2.new(1, 0, 0.27273, 0)
+UI["62"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["62"]["Name"] = [[Ignore]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Adonis Bypass.Bottom.Ignore.UIAspectRatioConstraint \\ --
+UI["63"] = Instance.new("UIAspectRatioConstraint", UI["62"])
+UI["63"]["AspectRatio"] = 16.66667
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Adonis Bypass.Bottom.UICorner \\ --
+UI["64"] = Instance.new("UICorner", UI["61"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Adonis Bypass.Bottom.Script_Name \\ --
+UI["65"] = Instance.new("TextLabel", UI["61"])
+UI["65"]["TextWrapped"] = true
+UI["65"]["BorderSizePixel"] = 0
+UI["65"]["TextScaled"] = true
+UI["65"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["65"]["TextSize"] = 14
+UI["65"]["FontFace"] = Font.new([[rbxasset://fonts/families/Balthazar.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["65"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["65"]["BackgroundTransparency"] = 1
+UI["65"]["Size"] = UDim2.new(1, 0, 0.4, 0)
+UI["65"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["65"]["Text"] = [[Adonis Bypass]]
+UI["65"]["Name"] = [[Script_Name]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Adonis Bypass.Bottom.Script_Name.UIAspectRatioConstraint \\ --
+UI["66"] = Instance.new("UIAspectRatioConstraint", UI["65"])
+UI["66"]["AspectRatio"] = 11.36364
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Adonis Bypass.Bottom.Execute_Script \\ --
+UI["67"] = Instance.new("TextButton", UI["61"])
+UI["67"]["TextWrapped"] = true
+UI["67"]["BorderSizePixel"] = 0
+UI["67"]["TextSize"] = 14
+UI["67"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["67"]["TextScaled"] = true
+UI["67"]["BackgroundColor3"] = Color3.fromRGB(112, 255, 117)
+UI["67"]["FontFace"] = Font.new([[rbxasset://fonts/families/Balthazar.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["67"]["Size"] = UDim2.new(0.328, 0, 0.54545, 0)
+UI["67"]["Name"] = [[Execute_Script]]
+UI["67"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["67"]["Text"] = [[Execute]]
+UI["67"]["Position"] = UDim2.new(0.532, 0, 0.4, 0)
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Adonis Bypass.Bottom.Execute_Script.UICorner \\ --
+UI["68"] = Instance.new("UICorner", UI["67"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Adonis Bypass.Bottom.Execute_Script.Value \\ --
+UI["69"] = Instance.new("StringValue", UI["67"])
+UI["69"]["Value"] = [[loadstring(game:HttpGet("https://pastebin.com/raw/0FcYSMEP"))()]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Adonis Bypass.Bottom.Execute_Script.Execute Script \\ --
+UI["6a"] = Instance.new("LocalScript", UI["67"])
+UI["6a"]["Name"] = [[Execute Script]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Adonis Bypass.Bottom.Execute_Script.UIAspectRatioConstraint \\ --
+UI["6b"] = Instance.new("UIAspectRatioConstraint", UI["67"])
+UI["6b"]["AspectRatio"] = 2.73333
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Adonis Bypass.Bottom.Copy_Script \\ --
+UI["6c"] = Instance.new("TextButton", UI["61"])
+UI["6c"]["TextWrapped"] = true
+UI["6c"]["BorderSizePixel"] = 0
+UI["6c"]["TextSize"] = 14
+UI["6c"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["6c"]["TextScaled"] = true
+UI["6c"]["BackgroundColor3"] = Color3.fromRGB(149, 135, 255)
+UI["6c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Balthazar.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["6c"]["Size"] = UDim2.new(0.328, 0, 0.54545, 0)
+UI["6c"]["Name"] = [[Copy_Script]]
+UI["6c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["6c"]["Text"] = [[Copy]]
+UI["6c"]["Position"] = UDim2.new(0.148, 0, 0.4, 0)
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Adonis Bypass.Bottom.Copy_Script.UICorner \\ --
+UI["6d"] = Instance.new("UICorner", UI["6c"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Adonis Bypass.Bottom.Copy_Script.LocalScript \\ --
+UI["6e"] = Instance.new("LocalScript", UI["6c"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Adonis Bypass.Bottom.Copy_Script.UIAspectRatioConstraint \\ --
+UI["6f"] = Instance.new("UIAspectRatioConstraint", UI["6c"])
+UI["6f"]["AspectRatio"] = 2.73333
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Adonis Bypass.Bottom.UIAspectRatioConstraint \\ --
+UI["70"] = Instance.new("UIAspectRatioConstraint", UI["61"])
+UI["70"]["AspectRatio"] = 4.54545
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Adonis Bypass.UIAspectRatioConstraint \\ --
+UI["71"] = Instance.new("UIAspectRatioConstraint", UI["5c"])
+UI["71"]["AspectRatio"] = 1.66667
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Chat Bypass \\ --
+UI["72"] = Instance.new("Frame", UI["19"])
+UI["72"]["BorderSizePixel"] = 0
+UI["72"]["BackgroundColor3"] = Color3.fromRGB(104, 104, 104)
+UI["72"]["Size"] = UDim2.new(0.40717, 0, 0.4886, 0)
+UI["72"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["72"]["Name"] = [[Chat Bypass]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Chat Bypass.UICorner \\ --
+UI["73"] = Instance.new("UICorner", UI["72"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Chat Bypass.Script_Image \\ --
+UI["74"] = Instance.new("ImageLabel", UI["72"])
+UI["74"]["BorderSizePixel"] = 0
+UI["74"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["74"]["Image"] = [[rbxassetid://18548234229]]
+UI["74"]["Size"] = UDim2.new(1, 0, 1, 0)
+UI["74"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["74"]["BackgroundTransparency"] = 1
+UI["74"]["Name"] = [[Script_Image]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Chat Bypass.Script_Image.UICorner \\ --
+UI["75"] = Instance.new("UICorner", UI["74"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Chat Bypass.Script_Image.UIAspectRatioConstraint \\ --
+UI["76"] = Instance.new("UIAspectRatioConstraint", UI["74"])
+UI["76"]["AspectRatio"] = 1.66667
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Chat Bypass.Bottom \\ --
+UI["77"] = Instance.new("Frame", UI["72"])
+UI["77"]["BorderSizePixel"] = 0
+UI["77"]["BackgroundColor3"] = Color3.fromRGB(181, 171, 255)
+UI["77"]["Size"] = UDim2.new(1, 0, 0.36667, 0)
+UI["77"]["Position"] = UDim2.new(0, 0, 0.63333, 0)
+UI["77"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["77"]["Name"] = [[Bottom]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Chat Bypass.Bottom.Ignore \\ --
+UI["78"] = Instance.new("Frame", UI["77"])
+UI["78"]["BorderSizePixel"] = 0
+UI["78"]["BackgroundColor3"] = Color3.fromRGB(181, 171, 255)
+UI["78"]["Size"] = UDim2.new(1, 0, 0.27273, 0)
+UI["78"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["78"]["Name"] = [[Ignore]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Chat Bypass.Bottom.Ignore.UIAspectRatioConstraint \\ --
+UI["79"] = Instance.new("UIAspectRatioConstraint", UI["78"])
+UI["79"]["AspectRatio"] = 16.66667
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Chat Bypass.Bottom.UICorner \\ --
+UI["7a"] = Instance.new("UICorner", UI["77"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Chat Bypass.Bottom.Script_Name \\ --
+UI["7b"] = Instance.new("TextLabel", UI["77"])
+UI["7b"]["TextWrapped"] = true
+UI["7b"]["BorderSizePixel"] = 0
+UI["7b"]["TextScaled"] = true
+UI["7b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["7b"]["TextSize"] = 14
+UI["7b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Balthazar.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["7b"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["7b"]["BackgroundTransparency"] = 1
+UI["7b"]["Size"] = UDim2.new(1, 0, 0.4, 0)
+UI["7b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["7b"]["Text"] = [[Chat Bypass]]
+UI["7b"]["Name"] = [[Script_Name]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Chat Bypass.Bottom.Script_Name.UIAspectRatioConstraint \\ --
+UI["7c"] = Instance.new("UIAspectRatioConstraint", UI["7b"])
+UI["7c"]["AspectRatio"] = 11.36364
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Chat Bypass.Bottom.Execute_Script \\ --
+UI["7d"] = Instance.new("TextButton", UI["77"])
+UI["7d"]["TextWrapped"] = true
+UI["7d"]["BorderSizePixel"] = 0
+UI["7d"]["TextSize"] = 14
+UI["7d"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["7d"]["TextScaled"] = true
+UI["7d"]["BackgroundColor3"] = Color3.fromRGB(112, 255, 117)
+UI["7d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Balthazar.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["7d"]["Size"] = UDim2.new(0.328, 0, 0.54545, 0)
+UI["7d"]["Name"] = [[Execute_Script]]
+UI["7d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["7d"]["Text"] = [[Execute]]
+UI["7d"]["Position"] = UDim2.new(0.532, 0, 0.4, 0)
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Chat Bypass.Bottom.Execute_Script.UICorner \\ --
+UI["7e"] = Instance.new("UICorner", UI["7d"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Chat Bypass.Bottom.Execute_Script.Value \\ --
+UI["7f"] = Instance.new("StringValue", UI["7d"])
+UI["7f"]["Value"] = [[loadstring(game:HttpGet('https://rawscripts.net/raw/Universal-Script-chat-bypass-15692'))()]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Chat Bypass.Bottom.Execute_Script.Execute Script \\ --
+UI["80"] = Instance.new("LocalScript", UI["7d"])
+UI["80"]["Name"] = [[Execute Script]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Chat Bypass.Bottom.Execute_Script.UIAspectRatioConstraint \\ --
+UI["81"] = Instance.new("UIAspectRatioConstraint", UI["7d"])
+UI["81"]["AspectRatio"] = 2.73333
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Chat Bypass.Bottom.Copy_Script \\ --
+UI["82"] = Instance.new("TextButton", UI["77"])
+UI["82"]["TextWrapped"] = true
+UI["82"]["BorderSizePixel"] = 0
+UI["82"]["TextSize"] = 14
+UI["82"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["82"]["TextScaled"] = true
+UI["82"]["BackgroundColor3"] = Color3.fromRGB(149, 135, 255)
+UI["82"]["FontFace"] = Font.new([[rbxasset://fonts/families/Balthazar.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["82"]["Size"] = UDim2.new(0.328, 0, 0.54545, 0)
+UI["82"]["Name"] = [[Copy_Script]]
+UI["82"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["82"]["Text"] = [[Copy]]
+UI["82"]["Position"] = UDim2.new(0.148, 0, 0.4, 0)
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Chat Bypass.Bottom.Copy_Script.UICorner \\ --
+UI["83"] = Instance.new("UICorner", UI["82"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Chat Bypass.Bottom.Copy_Script.LocalScript \\ --
+UI["84"] = Instance.new("LocalScript", UI["82"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Chat Bypass.Bottom.Copy_Script.UIAspectRatioConstraint \\ --
+UI["85"] = Instance.new("UIAspectRatioConstraint", UI["82"])
+UI["85"]["AspectRatio"] = 2.73333
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Chat Bypass.Bottom.UIAspectRatioConstraint \\ --
+UI["86"] = Instance.new("UIAspectRatioConstraint", UI["77"])
+UI["86"]["AspectRatio"] = 4.54545
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Chat Bypass.UIAspectRatioConstraint \\ --
+UI["87"] = Instance.new("UIAspectRatioConstraint", UI["72"])
+UI["87"]["AspectRatio"] = 1.66667
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.UIGridLayout \\ --
+UI["88"] = Instance.new("UIGridLayout", UI["19"])
+UI["88"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center
+UI["88"]["CellSize"] = UDim2.new(0.4, 0, 0.4, 0)
+UI["88"]["SortOrder"] = Enum.SortOrder.LayoutOrder
+UI["88"]["CellPadding"] = UDim2.new(0.04, 0, -0.27, 0)
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.PlaceHolder \\ --
+UI["89"] = Instance.new("Frame", UI["19"])
+UI["89"]["Visible"] = false
+UI["89"]["BorderSizePixel"] = 0
+UI["89"]["BackgroundColor3"] = Color3.fromRGB(104, 104, 104)
+UI["89"]["Size"] = UDim2.new(0.40717, 0, 0.4886, 0)
+UI["89"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["89"]["Name"] = [[PlaceHolder]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.PlaceHolder.UICorner \\ --
+UI["8a"] = Instance.new("UICorner", UI["89"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.PlaceHolder.Script_Image \\ --
+UI["8b"] = Instance.new("ImageLabel", UI["89"])
+UI["8b"]["BorderSizePixel"] = 0
+UI["8b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["8b"]["Image"] = [[rbxasset://textures/ui/GuiImagePlaceholder.png]]
+UI["8b"]["Size"] = UDim2.new(1, 0, 1, 0)
+UI["8b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8b"]["BackgroundTransparency"] = 1
+UI["8b"]["Name"] = [[Script_Image]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.PlaceHolder.Script_Image.UICorner \\ --
+UI["8c"] = Instance.new("UICorner", UI["8b"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.PlaceHolder.Script_Image.UIAspectRatioConstraint \\ --
+UI["8d"] = Instance.new("UIAspectRatioConstraint", UI["8b"])
+UI["8d"]["AspectRatio"] = 1.66667
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.PlaceHolder.Bottom \\ --
+UI["8e"] = Instance.new("Frame", UI["89"])
+UI["8e"]["BorderSizePixel"] = 0
+UI["8e"]["BackgroundColor3"] = Color3.fromRGB(181, 171, 255)
+UI["8e"]["Size"] = UDim2.new(1, 0, 0.36667, 0)
+UI["8e"]["Position"] = UDim2.new(0, 0, 0.63333, 0)
+UI["8e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8e"]["Name"] = [[Bottom]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.PlaceHolder.Bottom.Ignore \\ --
+UI["8f"] = Instance.new("Frame", UI["8e"])
+UI["8f"]["BorderSizePixel"] = 0
+UI["8f"]["BackgroundColor3"] = Color3.fromRGB(181, 171, 255)
+UI["8f"]["Size"] = UDim2.new(1, 0, 0.27273, 0)
+UI["8f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8f"]["Name"] = [[Ignore]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.PlaceHolder.Bottom.Ignore.UIAspectRatioConstraint \\ --
+UI["90"] = Instance.new("UIAspectRatioConstraint", UI["8f"])
+UI["90"]["AspectRatio"] = 16.66667
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.PlaceHolder.Bottom.UICorner \\ --
+UI["91"] = Instance.new("UICorner", UI["8e"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.PlaceHolder.Bottom.Script_Name \\ --
+UI["92"] = Instance.new("TextLabel", UI["8e"])
+UI["92"]["TextWrapped"] = true
+UI["92"]["BorderSizePixel"] = 0
+UI["92"]["TextScaled"] = true
+UI["92"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["92"]["TextSize"] = 14
+UI["92"]["FontFace"] = Font.new([[rbxasset://fonts/families/Balthazar.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["92"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["92"]["BackgroundTransparency"] = 1
+UI["92"]["Size"] = UDim2.new(1, 0, 0.4, 0)
+UI["92"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["92"]["Text"] = [[PlaceHolder]]
+UI["92"]["Name"] = [[Script_Name]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.PlaceHolder.Bottom.Script_Name.UIAspectRatioConstraint \\ --
+UI["93"] = Instance.new("UIAspectRatioConstraint", UI["92"])
+UI["93"]["AspectRatio"] = 11.36364
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.PlaceHolder.Bottom.Execute_Script \\ --
+UI["94"] = Instance.new("TextButton", UI["8e"])
+UI["94"]["TextWrapped"] = true
+UI["94"]["BorderSizePixel"] = 0
+UI["94"]["TextSize"] = 14
+UI["94"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["94"]["TextScaled"] = true
+UI["94"]["BackgroundColor3"] = Color3.fromRGB(112, 255, 117)
+UI["94"]["FontFace"] = Font.new([[rbxasset://fonts/families/Balthazar.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["94"]["Size"] = UDim2.new(0.328, 0, 0.54545, 0)
+UI["94"]["Name"] = [[Execute_Script]]
+UI["94"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["94"]["Text"] = [[Execute]]
+UI["94"]["Position"] = UDim2.new(0.532, 0, 0.4, 0)
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.PlaceHolder.Bottom.Execute_Script.UICorner \\ --
+UI["95"] = Instance.new("UICorner", UI["94"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.PlaceHolder.Bottom.Execute_Script.Value \\ --
+UI["96"] = Instance.new("StringValue", UI["94"])
+UI["96"]["Value"] = [[print("Test")]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.PlaceHolder.Bottom.Execute_Script.Execute Script \\ --
+UI["97"] = Instance.new("LocalScript", UI["94"])
+UI["97"]["Name"] = [[Execute Script]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.PlaceHolder.Bottom.Execute_Script.UIAspectRatioConstraint \\ --
+UI["98"] = Instance.new("UIAspectRatioConstraint", UI["94"])
+UI["98"]["AspectRatio"] = 2.73333
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.PlaceHolder.Bottom.Copy_Script \\ --
+UI["99"] = Instance.new("TextButton", UI["8e"])
+UI["99"]["TextWrapped"] = true
+UI["99"]["BorderSizePixel"] = 0
+UI["99"]["TextSize"] = 14
+UI["99"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["99"]["TextScaled"] = true
+UI["99"]["BackgroundColor3"] = Color3.fromRGB(149, 135, 255)
+UI["99"]["FontFace"] = Font.new([[rbxasset://fonts/families/Balthazar.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["99"]["Size"] = UDim2.new(0.328, 0, 0.54545, 0)
+UI["99"]["Name"] = [[Copy_Script]]
+UI["99"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["99"]["Text"] = [[Copy]]
+UI["99"]["Position"] = UDim2.new(0.148, 0, 0.4, 0)
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.PlaceHolder.Bottom.Copy_Script.UICorner \\ --
+UI["9a"] = Instance.new("UICorner", UI["99"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.PlaceHolder.Bottom.Copy_Script.LocalScript \\ --
+UI["9b"] = Instance.new("LocalScript", UI["99"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.PlaceHolder.Bottom.Copy_Script.UIAspectRatioConstraint \\ --
+UI["9c"] = Instance.new("UIAspectRatioConstraint", UI["99"])
+UI["9c"]["AspectRatio"] = 2.73333
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.PlaceHolder.Bottom.UIAspectRatioConstraint \\ --
+UI["9d"] = Instance.new("UIAspectRatioConstraint", UI["8e"])
+UI["9d"]["AspectRatio"] = 4.54545
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.PlaceHolder.UIAspectRatioConstraint \\ --
+UI["9e"] = Instance.new("UIAspectRatioConstraint", UI["89"])
+UI["9e"]["AspectRatio"] = 1.66667
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Reviz Admin \\ --
+UI["9f"] = Instance.new("Frame", UI["19"])
+UI["9f"]["BorderSizePixel"] = 0
+UI["9f"]["BackgroundColor3"] = Color3.fromRGB(104, 104, 104)
+UI["9f"]["Size"] = UDim2.new(0.40717, 0, 0.4886, 0)
+UI["9f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["9f"]["Name"] = [[Reviz Admin]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Reviz Admin.UICorner \\ --
+UI["a0"] = Instance.new("UICorner", UI["9f"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Reviz Admin.Script_Image \\ --
+UI["a1"] = Instance.new("ImageLabel", UI["9f"])
+UI["a1"]["BorderSizePixel"] = 0
+UI["a1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["a1"]["Image"] = [[rbxassetid://18548573684]]
+UI["a1"]["Size"] = UDim2.new(1, 0, 1, 0)
+UI["a1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a1"]["BackgroundTransparency"] = 1
+UI["a1"]["Name"] = [[Script_Image]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Reviz Admin.Script_Image.UICorner \\ --
+UI["a2"] = Instance.new("UICorner", UI["a1"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Reviz Admin.Script_Image.UIAspectRatioConstraint \\ --
+UI["a3"] = Instance.new("UIAspectRatioConstraint", UI["a1"])
+UI["a3"]["AspectRatio"] = 1.66667
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Reviz Admin.Bottom \\ --
+UI["a4"] = Instance.new("Frame", UI["9f"])
+UI["a4"]["BorderSizePixel"] = 0
+UI["a4"]["BackgroundColor3"] = Color3.fromRGB(181, 171, 255)
+UI["a4"]["Size"] = UDim2.new(1, 0, 0.36667, 0)
+UI["a4"]["Position"] = UDim2.new(0, 0, 0.63333, 0)
+UI["a4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a4"]["Name"] = [[Bottom]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Reviz Admin.Bottom.Ignore \\ --
+UI["a5"] = Instance.new("Frame", UI["a4"])
+UI["a5"]["BorderSizePixel"] = 0
+UI["a5"]["BackgroundColor3"] = Color3.fromRGB(181, 171, 255)
+UI["a5"]["Size"] = UDim2.new(1, 0, 0.27273, 0)
+UI["a5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a5"]["Name"] = [[Ignore]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Reviz Admin.Bottom.Ignore.UIAspectRatioConstraint \\ --
+UI["a6"] = Instance.new("UIAspectRatioConstraint", UI["a5"])
+UI["a6"]["AspectRatio"] = 16.66667
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Reviz Admin.Bottom.UICorner \\ --
+UI["a7"] = Instance.new("UICorner", UI["a4"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Reviz Admin.Bottom.Script_Name \\ --
+UI["a8"] = Instance.new("TextLabel", UI["a4"])
+UI["a8"]["TextWrapped"] = true
+UI["a8"]["BorderSizePixel"] = 0
+UI["a8"]["TextScaled"] = true
+UI["a8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["a8"]["TextSize"] = 14
+UI["a8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Balthazar.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["a8"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a8"]["BackgroundTransparency"] = 1
+UI["a8"]["Size"] = UDim2.new(1, 0, 0.4, 0)
+UI["a8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a8"]["Text"] = [[Reviz Admin]]
+UI["a8"]["Name"] = [[Script_Name]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Reviz Admin.Bottom.Script_Name.UIAspectRatioConstraint \\ --
+UI["a9"] = Instance.new("UIAspectRatioConstraint", UI["a8"])
+UI["a9"]["AspectRatio"] = 11.36364
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Reviz Admin.Bottom.Execute_Script \\ --
+UI["aa"] = Instance.new("TextButton", UI["a4"])
+UI["aa"]["TextWrapped"] = true
+UI["aa"]["BorderSizePixel"] = 0
+UI["aa"]["TextSize"] = 14
+UI["aa"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["aa"]["TextScaled"] = true
+UI["aa"]["BackgroundColor3"] = Color3.fromRGB(112, 255, 117)
+UI["aa"]["FontFace"] = Font.new([[rbxasset://fonts/families/Balthazar.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["aa"]["Size"] = UDim2.new(0.328, 0, 0.54545, 0)
+UI["aa"]["Name"] = [[Execute_Script]]
+UI["aa"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["aa"]["Text"] = [[Execute]]
+UI["aa"]["Position"] = UDim2.new(0.532, 0, 0.4, 0)
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Reviz Admin.Bottom.Execute_Script.UICorner \\ --
+UI["ab"] = Instance.new("UICorner", UI["aa"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Reviz Admin.Bottom.Execute_Script.Value \\ --
+UI["ac"] = Instance.new("StringValue", UI["aa"])
+UI["ac"]["Value"] = [[loadstring(game:HttpGet('https://pastebin.com/raw/ny0aQTxb'))()]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Reviz Admin.Bottom.Execute_Script.Execute Script \\ --
+UI["ad"] = Instance.new("LocalScript", UI["aa"])
+UI["ad"]["Name"] = [[Execute Script]]
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Reviz Admin.Bottom.Execute_Script.UIAspectRatioConstraint \\ --
+UI["ae"] = Instance.new("UIAspectRatioConstraint", UI["aa"])
+UI["ae"]["AspectRatio"] = 2.73333
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Reviz Admin.Bottom.Copy_Script \\ --
+UI["af"] = Instance.new("TextButton", UI["a4"])
+UI["af"]["TextWrapped"] = true
+UI["af"]["BorderSizePixel"] = 0
+UI["af"]["TextSize"] = 14
+UI["af"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["af"]["TextScaled"] = true
+UI["af"]["BackgroundColor3"] = Color3.fromRGB(149, 135, 255)
+UI["af"]["FontFace"] = Font.new([[rbxasset://fonts/families/Balthazar.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["af"]["Size"] = UDim2.new(0.328, 0, 0.54545, 0)
+UI["af"]["Name"] = [[Copy_Script]]
+UI["af"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["af"]["Text"] = [[Copy]]
+UI["af"]["Position"] = UDim2.new(0.148, 0, 0.4, 0)
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Reviz Admin.Bottom.Copy_Script.UICorner \\ --
+UI["b0"] = Instance.new("UICorner", UI["af"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Reviz Admin.Bottom.Copy_Script.LocalScript \\ --
+UI["b1"] = Instance.new("LocalScript", UI["af"])
+
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Reviz Admin.Bottom.Copy_Script.UIAspectRatioConstraint \\ --
+UI["b2"] = Instance.new("UIAspectRatioConstraint", UI["af"])
+UI["b2"]["AspectRatio"] = 2.73333
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Reviz Admin.Bottom.UIAspectRatioConstraint \\ --
+UI["b3"] = Instance.new("UIAspectRatioConstraint", UI["a4"])
+UI["b3"]["AspectRatio"] = 4.54545
+
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Reviz Admin.UIAspectRatioConstraint \\ --
+UI["b4"] = Instance.new("UIAspectRatioConstraint", UI["9f"])
+UI["b4"]["AspectRatio"] = 1.66667
+
+-- // StarterGui.Moon Cheat.Canva.Tab2 \\ --
+UI["b5"] = Instance.new("Frame", UI["2"])
+UI["b5"]["Visible"] = false
+UI["b5"]["BorderSizePixel"] = 0
+UI["b5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["b5"]["Size"] = UDim2.new(1, 0, 1, 0)
+UI["b5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b5"]["Name"] = [[Tab2]]
+UI["b5"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.Moon Cheat.Canva.Tab3B \\ --
+UI["b6"] = Instance.new("ImageButton", UI["2"])
+UI["b6"]["BorderSizePixel"] = 0
+UI["b6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["b6"]["ImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b6"]["ZIndex"] = 3
+UI["b6"]["Image"] = [[rbxassetid://18522319598]]
+UI["b6"]["Size"] = UDim2.new(0, 51, 0, 52)
+UI["b6"]["BackgroundTransparency"] = 1
+UI["b6"]["Name"] = [[Tab3B]]
+UI["b6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b6"]["Position"] = UDim2.new(0.01594, 0, 0.43299, 0)
+
+-- // StarterGui.Moon Cheat.Canva.Config button \\ --
+UI["b7"] = Instance.new("ImageButton", UI["2"])
+UI["b7"]["BorderSizePixel"] = 0
+UI["b7"]["BackgroundColor3"] = Color3.fromRGB(144, 179, 255)
+UI["b7"]["ZIndex"] = 3
+UI["b7"]["Image"] = [[http://www.roblox.com/asset/?id=7390123034]]
+UI["b7"]["Size"] = UDim2.new(0, 51, 0, 52)
+UI["b7"]["BackgroundTransparency"] = 1
+UI["b7"]["Name"] = [[Config button]]
+UI["b7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b7"]["Position"] = UDim2.new(0.01739, 0, 0.8299, 0)
+
+-- // StarterGui.Moon Cheat.Canva.Config button.Images/config \\ --
+UI["b8"] = Instance.new("Decal", UI["b7"])
+UI["b8"]["Name"] = [[Images/config]]
+UI["b8"]["Texture"] = [[http://www.roblox.com/asset/?id=7390123034]]
+
+-- // StarterGui.Moon Cheat.Canva.Tab_Monaco \\ --
+UI["b9"] = Instance.new("Frame", UI["2"])
+UI["b9"]["Visible"] = false
+UI["b9"]["BorderSizePixel"] = 0
+UI["b9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["b9"]["Size"] = UDim2.new(0, 217, 0, 140)
+UI["b9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b9"]["Name"] = [[Tab_Monaco]]
+UI["b9"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.Moon Cheat.Canva.Tab_Monaco.Monaco_Scroll \\ --
+UI["ba"] = Instance.new("ScrollingFrame", UI["b9"])
+UI["ba"]["Active"] = true
+UI["ba"]["ZIndex"] = 3
+UI["ba"]["BorderSizePixel"] = 0
+UI["ba"]["CanvasSize"] = UDim2.new(0, 0, 5, 0)
+UI["ba"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["ba"]["Name"] = [[Monaco_Scroll]]
+UI["ba"]["Size"] = UDim2.new(0, 450, 0, 289)
+UI["ba"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["ba"]["Position"] = UDim2.new(1.10376, 0, 0.3517, 0)
+UI["ba"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["ba"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.Moon Cheat.Canva.Tab_Monaco.Monaco_Scroll.Monaco \\ --
+UI["bb"] = Instance.new("TextBox", UI["ba"])
+UI["bb"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["bb"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255)
+UI["bb"]["ZIndex"] = 4
+UI["bb"]["BorderSizePixel"] = 0
+UI["bb"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["bb"]["TextSize"] = 14
+UI["bb"]["Name"] = [[Monaco]]
+UI["bb"]["TextYAlignment"] = Enum.TextYAlignment.Top
+UI["bb"]["BackgroundColor3"] = Color3.fromRGB(148, 164, 255)
+UI["bb"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["bb"]["MultiLine"] = true
+UI["bb"]["PlaceholderText"] = [[Print("Hello World")]]
+UI["bb"]["Size"] = UDim2.new(1, 0, 1, 0)
+UI["bb"]["Position"] = UDim2.new(-0.00106, 0, -0.00277, 0)
+UI["bb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["bb"]["Text"] = [[]]
+UI["bb"]["BackgroundTransparency"] = 0.7
+
+-- // StarterGui.Moon Cheat.Canva.Tab_Monaco.Monaco_Scroll.Monaco.UICorner \\ --
+UI["bc"] = Instance.new("UICorner", UI["bb"])
+UI["bc"]["CornerRadius"] = UDim.new(0, 6)
+
+-- // StarterGui.Moon Cheat.Canva.Tab_Monaco.Monaco_Scroll.UICorner \\ --
+UI["bd"] = Instance.new("UICorner", UI["ba"])
+UI["bd"]["CornerRadius"] = UDim.new(0, 6)
+
+-- // StarterGui.Moon Cheat.Canva.Tab_Monaco.Clear \\ --
+UI["be"] = Instance.new("ImageButton", UI["b9"])
+UI["be"]["BorderSizePixel"] = 0
+UI["be"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["be"]["Image"] = [[rbxassetid://18518548141]]
+UI["be"]["Size"] = UDim2.new(0, 40, 0, 40)
+UI["be"]["BackgroundTransparency"] = 1
+UI["be"]["Name"] = [[Clear]]
+UI["be"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["be"]["Position"] = UDim2.new(2.76198, 0, 2.45405, 0)
+
+-- // StarterGui.Moon Cheat.Canva.Tab_Monaco.Clear.Clear Script \\ --
+UI["bf"] = Instance.new("LocalScript", UI["be"])
+UI["bf"]["Name"] = [[Clear Script]]
+
+-- // StarterGui.Moon Cheat.Canva.Tab_Monaco.Exec \\ --
+UI["c0"] = Instance.new("ImageButton", UI["b9"])
+UI["c0"]["BorderSizePixel"] = 0
+UI["c0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["c0"]["Image"] = [[rbxassetid://18518509818]]
+UI["c0"]["Size"] = UDim2.new(0, 35, 0, 35)
+UI["c0"]["BackgroundTransparency"] = 1
+UI["c0"]["Name"] = [[Exec]]
+UI["c0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c0"]["Position"] = UDim2.new(2.98325, 0, 2.47557, 0)
+
+-- // StarterGui.Moon Cheat.Canva.Tab_Monaco.Exec.Execute Script \\ --
+UI["c1"] = Instance.new("LocalScript", UI["c0"])
+UI["c1"]["Name"] = [[Execute Script]]
+
+-- // StarterGui.Moon Cheat.Scan \\ --
+UI["c2"] = Instance.new("Frame", UI["1"])
+UI["c2"]["BorderSizePixel"] = 0
+UI["c2"]["BackgroundColor3"] = Color3.fromRGB(129, 135, 255)
+UI["c2"]["Size"] = UDim2.new(0, 400, 0, 244)
+UI["c2"]["Position"] = UDim2.new(0.285, 0, -2, 0)
+UI["c2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c2"]["Name"] = [[Scan]]
+
+-- // StarterGui.Moon Cheat.Scan.Status \\ --
+UI["c3"] = Instance.new("TextLabel", UI["c2"])
+UI["c3"]["TextWrapped"] = true
+UI["c3"]["ZIndex"] = 3
+UI["c3"]["BorderSizePixel"] = 0
+UI["c3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["c3"]["TextSize"] = 38
+UI["c3"]["FontFace"] = Font.new([[rbxassetid://12187607722]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["c3"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["c3"]["BackgroundTransparency"] = 1
+UI["c3"]["RichText"] = true
+UI["c3"]["Size"] = UDim2.new(0, 273, 0, 60)
+UI["c3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c3"]["Text"] = [[]]
+UI["c3"]["Name"] = [[Status]]
+UI["c3"]["Position"] = UDim2.new(0.1625, 0, 0.22328, 0)
+
+-- // StarterGui.Moon Cheat.Scan.Background \\ --
+UI["c4"] = Instance.new("ImageLabel", UI["c2"])
+UI["c4"]["BorderSizePixel"] = 0
+UI["c4"]["BackgroundColor3"] = Color3.fromRGB(129, 135, 255)
+UI["c4"]["ImageColor3"] = Color3.fromRGB(114, 114, 114)
+UI["c4"]["Image"] = [[http://www.roblox.com/asset/?id=64212796]]
+UI["c4"]["Size"] = UDim2.new(1, 0, 1, 0)
+UI["c4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c4"]["Name"] = [[Background]]
+
+-- // StarterGui.Moon Cheat.Scan.Background.UICorner \\ --
+UI["c5"] = Instance.new("UICorner", UI["c4"])
+
+
+-- // StarterGui.Moon Cheat.Scan.UICorner \\ --
+UI["c6"] = Instance.new("UICorner", UI["c2"])
+
+
+-- // StarterGui.Moon Cheat.Scan.Drag \\ --
+UI["c7"] = Instance.new("LocalScript", UI["c2"])
+UI["c7"]["Name"] = [[Drag]]
+
+-- // StarterGui.Moon Cheat.Scan.Main Script \\ --
+UI["c8"] = Instance.new("LocalScript", UI["c2"])
+UI["c8"]["Name"] = [[Main Script]]
+
+-- // StarterGui.Moon Cheat.Scan.Button \\ --
+UI["c9"] = Instance.new("TextButton", UI["c2"])
+UI["c9"]["BorderSizePixel"] = 0
+UI["c9"]["TextSize"] = 30
+UI["c9"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["c9"]["BackgroundColor3"] = Color3.fromRGB(101, 106, 201)
+UI["c9"]["FontFace"] = Font.new([[rbxassetid://12187607722]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["c9"]["ZIndex"] = 3
+UI["c9"]["Size"] = UDim2.new(0, 200, 0, 50)
+UI["c9"]["Name"] = [[Button]]
+UI["c9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c9"]["Text"] = [[Scan]]
+UI["c9"]["Position"] = UDim2.new(0.25, 0, 0.52459, 0)
+
+-- // StarterGui.Moon Cheat.Scan.Button.UICorner \\ --
+UI["ca"] = Instance.new("UICorner", UI["c9"])
+
+
+-- // StarterGui.Moon Cheat.Scan.Logo \\ --
+UI["cb"] = Instance.new("ImageLabel", UI["c2"])
+UI["cb"]["ZIndex"] = 564564
+UI["cb"]["BorderSizePixel"] = 0
+UI["cb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["cb"]["Image"] = [[rbxassetid://18518737392]]
+UI["cb"]["Size"] = UDim2.new(0, 50, 0, 50)
+UI["cb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["cb"]["BackgroundTransparency"] = 1
+UI["cb"]["Name"] = [[Logo]]
+UI["cb"]["Position"] = UDim2.new(0.01739, 0, 0.02062, 0)
+
+-- // StarterGui.Moon Cheat.Scan.Logo.Text \\ --
+UI["cc"] = Instance.new("TextLabel", UI["cb"])
+UI["cc"]["TextWrapped"] = true
+UI["cc"]["TextStrokeTransparency"] = 0
+UI["cc"]["ZIndex"] = 23432
+UI["cc"]["BorderSizePixel"] = 0
+UI["cc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["cc"]["TextSize"] = 38
+UI["cc"]["FontFace"] = Font.new([[rbxassetid://12187607722]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["cc"]["TextColor3"] = Color3.fromRGB(152, 162, 255)
+UI["cc"]["BackgroundTransparency"] = 1
+UI["cc"]["Size"] = UDim2.new(0, 70, 0, 46)
+UI["cc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["cc"]["Text"] = [[Moon]]
+UI["cc"]["Name"] = [[Text]]
+UI["cc"]["Position"] = UDim2.new(1.01517, 0, 0.06897, 0)
+
+-- // StarterGui.Moon Cheat.Scan.Close \\ --
+UI["cd"] = Instance.new("TextButton", UI["c2"])
+UI["cd"]["BorderSizePixel"] = 0
+UI["cd"]["TextSize"] = 30
+UI["cd"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["cd"]["BackgroundColor3"] = Color3.fromRGB(101, 106, 201)
+UI["cd"]["FontFace"] = Font.new([[rbxassetid://12187607722]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["cd"]["ZIndex"] = 3
+UI["cd"]["Size"] = UDim2.new(0, 45, 0, 44)
+UI["cd"]["BackgroundTransparency"] = 1
+UI["cd"]["Name"] = [[Close]]
+UI["cd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["cd"]["Text"] = [[X]]
+UI["cd"]["Position"] = UDim2.new(0.8875, 0, 0, 0)
+
+-- // StarterGui.Moon Cheat.Scan.Close.UICorner \\ --
+UI["ce"] = Instance.new("UICorner", UI["cd"])
+
+
+-- // StarterGui.Moon Cheat.Scan.Close.Close gui \\ --
+UI["cf"] = Instance.new("LocalScript", UI["cd"])
+UI["cf"]["Name"] = [[Close gui]]
+
+-- // StarterGui.Moon Cheat.Scan.UIStroke \\ --
+UI["d0"] = Instance.new("UIStroke", UI["c2"])
+UI["d0"]["Thickness"] = 2
+
+-- // StarterGui.Moon Cheat.Hide/open \\ --
+UI["d1"] = Instance.new("ImageButton", UI["1"])
+UI["d1"]["BorderSizePixel"] = 0
+UI["d1"]["BackgroundColor3"] = Color3.fromRGB(129, 135, 255)
+UI["d1"]["Image"] = [[rbxassetid://18518737392]]
+UI["d1"]["Size"] = UDim2.new(0, 60, 0, 60)
+UI["d1"]["Name"] = [[Hide/open]]
+UI["d1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["d1"]["Visible"] = false
+UI["d1"]["Position"] = UDim2.new(0.06029, 0, 0.2565, 0)
+
+-- // StarterGui.Moon Cheat.Hide/open.UICorner \\ --
+UI["d2"] = Instance.new("UICorner", UI["d1"])
+
+
 -- // StarterGui.Moon Cheat.Hide/open.Close \\ --
-UI["34"] = Instance.new("LocalScript", UI["32"])
-UI["34"]["Name"] = [[Close]]
+UI["d3"] = Instance.new("LocalScript", UI["d1"])
+UI["d3"]["Name"] = [[Close]]
 
 -- // StarterGui.Moon Cheat.Skys \\ --
-UI["35"] = Instance.new("Folder", UI["1"])
-UI["35"]["Name"] = [[Skys]]
+UI["d4"] = Instance.new("Folder", UI["1"])
+UI["d4"]["Name"] = [[Skys]]
 
 -- // StarterGui.Moon Cheat.Skys.Scary Skybox \\ --
-UI["36"] = Instance.new("Sky", UI["35"])
-UI["36"]["MoonTextureId"] = [[http://www.roblox.com/asset/?id=1243374078]]
-UI["36"]["SunTextureId"] = [[http://www.roblox.com/asset/?id=1243374078]]
-UI["36"]["SkyboxUp"] = [[http://www.roblox.com/asset/?id=1243374078]]
-UI["36"]["SkyboxDn"] = [[http://www.roblox.com/asset/?id=1243374078]]
-UI["36"]["SkyboxBk"] = [[http://www.roblox.com/asset/?id=1243374078]]
-UI["36"]["SkyboxFt"] = [[http://www.roblox.com/asset/?id=1243374078]]
-UI["36"]["Name"] = [[Scary Skybox]]
-UI["36"]["SkyboxLf"] = [[http://www.roblox.com/asset/?id=1243374078]]
-UI["36"]["SkyboxRt"] = [[http://www.roblox.com/asset/?id=1243374078]]
+UI["d5"] = Instance.new("Sky", UI["d4"])
+UI["d5"]["MoonTextureId"] = [[http://www.roblox.com/asset/?id=1243374078]]
+UI["d5"]["SunTextureId"] = [[http://www.roblox.com/asset/?id=1243374078]]
+UI["d5"]["SkyboxUp"] = [[http://www.roblox.com/asset/?id=1243374078]]
+UI["d5"]["SkyboxDn"] = [[http://www.roblox.com/asset/?id=1243374078]]
+UI["d5"]["SkyboxBk"] = [[http://www.roblox.com/asset/?id=1243374078]]
+UI["d5"]["SkyboxFt"] = [[http://www.roblox.com/asset/?id=1243374078]]
+UI["d5"]["Name"] = [[Scary Skybox]]
+UI["d5"]["SkyboxLf"] = [[http://www.roblox.com/asset/?id=1243374078]]
+UI["d5"]["SkyboxRt"] = [[http://www.roblox.com/asset/?id=1243374078]]
 
 -- // StarterGui.Moon Cheat.Decals \\ --
-UI["37"] = Instance.new("Folder", UI["1"])
-UI["37"]["Name"] = [[Decals]]
+UI["d6"] = Instance.new("Folder", UI["1"])
+UI["d6"]["Name"] = [[Decals]]
 
 -- // StarterGui.Moon Cheat.Game Supported Detector \\ --
-UI["38"] = Instance.new("LocalScript", UI["1"])
-UI["38"]["Enabled"] = false
-UI["38"]["Name"] = [[Game Supported Detector]]
-UI["38"]["Disabled"] = true
+UI["d7"] = Instance.new("LocalScript", UI["1"])
+UI["d7"]["Enabled"] = false
+UI["d7"]["Name"] = [[Game Supported Detector]]
+UI["d7"]["Disabled"] = true
 
--- // StarterGui.Moon Cheat.Canva.Background.Clear.Clear Script \\ --
-local function SCRIPT_b()
-local script = UI["b"]
-	local Mona = script.Parent.Parent.Monaco:WaitForChild("Monaco")
-	local button = script.Parent
-	
-	button.MouseButton1Click:Connect(function()
-		-- Try to clear the text in Mona
-		local success, errorMsg = pcall(function()
-			Mona.Text = ""
-		end)
-	
-		-- If there's an error, print a warning
-		if not success then
-			warn("Couldn't Clear: " .. errorMsg)
-		end
-	end)
-	
-end
-task.spawn(SCRIPT_b)
--- // StarterGui.Moon Cheat.Canva.Background.Exec.Execute Script \\ --
-local function SCRIPT_d()
-local script = UI["d"]
-	local mona = script.Parent.Parent.Monaco:WaitForChild("Monaco")
-	local button = script.Parent
-	
-	-- Function to execute the code from "mona"
-	local function executeMonaCode()
-		local code = mona.Text
-		local success, errorMsg = pcall(function()
-			local func = loadstring(code)
-			if func then
-				func()
-			end
-		end)
-	
-		if not success then
-			warn("Error executing code: "..errorMsg)
-		end
-	end
-	
-	-- Connect the button click to the executeMonaCode function
-	button.MouseButton1Click:Connect(executeMonaCode)
-	
-end
-task.spawn(SCRIPT_d)
+-- // StarterGui.Moon Cheat.Intro \\ --
+UI["d8"] = Instance.new("Frame", UI["1"])
+UI["d8"]["BorderSizePixel"] = 0
+UI["d8"]["BackgroundColor3"] = Color3.fromRGB(129, 135, 255)
+UI["d8"]["Size"] = UDim2.new(0.38411, 0, 0.41724, 0)
+UI["d8"]["Position"] = UDim2.new(0.317, 0, 2, 0)
+UI["d8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["d8"]["Name"] = [[Intro]]
+
+-- // StarterGui.Moon Cheat.Intro.BG \\ --
+UI["d9"] = Instance.new("ImageLabel", UI["d8"])
+UI["d9"]["BorderSizePixel"] = 0
+UI["d9"]["BackgroundColor3"] = Color3.fromRGB(129, 135, 255)
+UI["d9"]["ImageColor3"] = Color3.fromRGB(114, 114, 114)
+UI["d9"]["Image"] = [[http://www.roblox.com/asset/?id=64212796]]
+UI["d9"]["Size"] = UDim2.new(1, 0, 1, 0)
+UI["d9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["d9"]["Name"] = [[BG]]
+
+-- // StarterGui.Moon Cheat.Intro.BG.UICorner \\ --
+UI["da"] = Instance.new("UICorner", UI["d9"])
+
+
+-- // StarterGui.Moon Cheat.Intro.BG.UIAspectRatioConstraint \\ --
+UI["db"] = Instance.new("UIAspectRatioConstraint", UI["d9"])
+UI["db"]["AspectRatio"] = 1.63934
+
+-- // StarterGui.Moon Cheat.Intro.UICorner \\ --
+UI["dc"] = Instance.new("UICorner", UI["d8"])
+
+
+-- // StarterGui.Moon Cheat.Intro.Logo \\ --
+UI["dd"] = Instance.new("ImageLabel", UI["d8"])
+UI["dd"]["ZIndex"] = 564564
+UI["dd"]["BorderSizePixel"] = 0
+UI["dd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["dd"]["Image"] = [[rbxassetid://18518737392]]
+UI["dd"]["Size"] = UDim2.new(0.43361, 0, 0.6191, 0)
+UI["dd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["dd"]["BackgroundTransparency"] = 1
+UI["dd"]["Name"] = [[Logo]]
+UI["dd"]["Position"] = UDim2.new(0.33879, 0, 0.06351, 0)
+
+-- // StarterGui.Moon Cheat.Intro.Logo.UIAspectRatioConstraint \\ --
+UI["de"] = Instance.new("UIAspectRatioConstraint", UI["dd"])
+
+
+-- // StarterGui.Moon Cheat.Intro.UIStroke \\ --
+UI["df"] = Instance.new("UIStroke", UI["d8"])
+UI["df"]["Thickness"] = 2
+
+-- // StarterGui.Moon Cheat.Intro.Intro \\ --
+UI["e0"] = Instance.new("LocalScript", UI["d8"])
+UI["e0"]["Name"] = [[Intro]]
+
+-- // StarterGui.Moon Cheat.Intro.UIAspectRatioConstraint \\ --
+UI["e1"] = Instance.new("UIAspectRatioConstraint", UI["d8"])
+UI["e1"]["AspectRatio"] = 1.63934
+
+-- // StarterGui.Moon Cheat.Intro.TEEXT \\ --
+UI["e2"] = Instance.new("TextLabel", UI["d8"])
+UI["e2"]["TextWrapped"] = true
+UI["e2"]["TextStrokeTransparency"] = 0
+UI["e2"]["ZIndex"] = 23432
+UI["e2"]["BorderSizePixel"] = 0
+UI["e2"]["TextScaled"] = true
+UI["e2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["e2"]["TextSize"] = 38
+UI["e2"]["FontFace"] = Font.new([[rbxassetid://12187607722]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["e2"]["TextColor3"] = Color3.fromRGB(152, 162, 255)
+UI["e2"]["BackgroundTransparency"] = 1
+UI["e2"]["Size"] = UDim2.new(1.616, 0, 0.528, 0)
+UI["e2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e2"]["Text"] = [[Moon]]
+UI["e2"]["Name"] = [[TEEXT]]
+UI["e2"]["Position"] = UDim2.new(-0.00383, 0, 0.54851, 0)
+
+-- // StarterGui.Moon Cheat.Intro.TEEXT.UIAspectRatioConstraint \\ --
+UI["e3"] = Instance.new("UIAspectRatioConstraint", UI["e2"])
+UI["e3"]["AspectRatio"] = 3.06061
+
 -- // StarterGui.Moon Cheat.Canva.Dragify \\ --
-local function SCRIPT_e()
-local script = UI["e"]
+local function SCRIPT_6()
+local script = UI["6"]
 	local UserInputService = game:GetService("UserInputService")
 	
 	local gui = script.Parent
@@ -578,13 +1638,13 @@ local script = UI["e"]
 		end
 	end)
 end
-task.spawn(SCRIPT_e)
+task.spawn(SCRIPT_6)
 -- // StarterGui.Moon Cheat.Canva.Ad.LocalScript \\ --
-local function SCRIPT_17()
-local script = UI["17"]
+local function SCRIPT_f()
+local script = UI["f"]
 	-- Define the image table
 	local images = {
-		"rbxassetid://18518331715",
+		"rbxassetid://18526958587",
 		"rbxassetid://18526958587"
 	}
 	
@@ -614,10 +1674,10 @@ local script = UI["17"]
 	changeImage()
 	
 end
-task.spawn(SCRIPT_17)
+task.spawn(SCRIPT_f)
 -- // StarterGui.Moon Cheat.Canva.Close.Close \\ --
-local function SCRIPT_1b()
-local script = UI["1b"]
+local function SCRIPT_13()
+local script = UI["13"]
 	local b = script.Parent
 	local h = script.Parent.Parent.Parent["Hide/open"]
 	local c = script.Parent.Parent
@@ -630,17 +1690,340 @@ local script = UI["1b"]
 	
 	end)
 end
-task.spawn(SCRIPT_1b)
--- // StarterGui.Moon Cheat.Canva.Tab1.Kill.Kill \\ --
-local function SCRIPT_1f()
-local script = UI["1f"]
-	print("Hello world!")
+task.spawn(SCRIPT_13)
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Search.Search Script \\ --
+local function SCRIPT_17()
+local script = UI["17"]
+	-- Obtenha referências para os objetos relevantes
+	local textBox = script.Parent
+	local scriptsTab = script.Parent.Parent.Scripts
+	local scriptsFolder = scriptsTab.Scripts
+	
+	-- Função de filtragem
+	local function filterScripts()
+		local filterText = textBox.Text:lower()
+	
+		-- Verifica se o texto de busca tem pelo menos 3 caracteres
+		if #filterText < 1 then
+			-- Se não tiver, mostra todos os scripts
+			for _, scriptFrame in pairs(scriptsFolder:GetChildren()) do
+				if scriptFrame:IsA("Frame") then
+					scriptFrame.Visible = true
+				end
+			end
+		else
+			-- Se tiver, faz a filtragem
+			for _, scriptFrame in pairs(scriptsFolder:GetChildren()) do
+				if scriptFrame:IsA("Frame") then
+					if scriptFrame.Name:lower():find(filterText) then
+						scriptFrame.Visible = true
+					else
+						scriptFrame.Visible = false
+					end
+				end
+			end
+		end
+	end
+	
+	-- Conecta a função de filtragem ao evento "Changed" da TextBox
+	textBox.Changed:Connect(filterScripts)
 	
 end
-task.spawn(SCRIPT_1f)
+task.spawn(SCRIPT_17)
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Infinite Yield.Bottom.Execute_Script.Execute Script \\ --
+local function SCRIPT_28()
+local script = UI["28"]
+	local scr = script.Parent.Value
+	local b = script.Parent
+	
+	--------------------------------------
+	b.MouseButton1Click:Connect(function()
+		-- Execute the script stored in scr
+		local code = scr
+		local func, err = loadstring(code)
+		if func then
+			local success, execErr = pcall(func)
+			if not success then
+				warn("Error executing script: " .. execErr)
+			end
+		else
+			warn("Error loading script: " .. err)
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_28)
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Infinite Yield.Bottom.Copy_Script.LocalScript \\ --
+local function SCRIPT_2c()
+local script = UI["2c"]
+	local b = script.Parent
+	local val = script.Parent.Parent.Execute_Script.Value.Value
+	
+	b.MouseButton1Click:Connect(function()
+		setclipboard(val)
+	end)
+	
+end
+task.spawn(SCRIPT_2c)
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Dark Dex v4.Bottom.Execute_Script.Execute Script \\ --
+local function SCRIPT_3e()
+local script = UI["3e"]
+	local scr = script.Parent.Value
+	local b = script.Parent
+	
+	--------------------------------------
+	b.MouseButton1Click:Connect(function()
+		-- Execute the script stored in scr
+		local code = scr
+		local func, err = loadstring(code)
+		if func then
+			local success, execErr = pcall(func)
+			if not success then
+				warn("Error executing script: " .. execErr)
+			end
+		else
+			warn("Error loading script: " .. err)
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_3e)
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Dark Dex v4.Bottom.Copy_Script.LocalScript \\ --
+local function SCRIPT_42()
+local script = UI["42"]
+	local b = script.Parent
+	local val = script.Parent.Parent.Execute_Script.Value.Value
+	
+	b.MouseButton1Click:Connect(function()
+		setclipboard(val)
+	end)
+	
+end
+task.spawn(SCRIPT_42)
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Remote Spy V3.Bottom.Execute_Script.Execute Script \\ --
+local function SCRIPT_54()
+local script = UI["54"]
+	local scr = script.Parent.Value
+	local b = script.Parent
+	
+	--------------------------------------
+	b.MouseButton1Click:Connect(function()
+		-- Execute the script stored in scr
+		local code = scr
+		local func, err = loadstring(code)
+		if func then
+			local success, execErr = pcall(func)
+			if not success then
+				warn("Error executing script: " .. execErr)
+			end
+		else
+			warn("Error loading script: " .. err)
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_54)
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Remote Spy V3.Bottom.Copy_Script.LocalScript \\ --
+local function SCRIPT_58()
+local script = UI["58"]
+	local b = script.Parent
+	local val = script.Parent.Parent.Execute_Script.Value.Value
+	
+	b.MouseButton1Click:Connect(function()
+		setclipboard(val)
+	end)
+	
+end
+task.spawn(SCRIPT_58)
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Adonis Bypass.Bottom.Execute_Script.Execute Script \\ --
+local function SCRIPT_6a()
+local script = UI["6a"]
+	local scr = script.Parent.Value
+	local b = script.Parent
+	
+	--------------------------------------
+	b.MouseButton1Click:Connect(function()
+		-- Execute the script stored in scr
+		local code = scr
+		local func, err = loadstring(code)
+		if func then
+			local success, execErr = pcall(func)
+			if not success then
+				warn("Error executing script: " .. execErr)
+			end
+		else
+			warn("Error loading script: " .. err)
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_6a)
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Adonis Bypass.Bottom.Copy_Script.LocalScript \\ --
+local function SCRIPT_6e()
+local script = UI["6e"]
+	local b = script.Parent
+	local val = script.Parent.Parent.Execute_Script.Value.Value
+	
+	b.MouseButton1Click:Connect(function()
+		setclipboard(val)
+	end)
+	
+end
+task.spawn(SCRIPT_6e)
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Chat Bypass.Bottom.Execute_Script.Execute Script \\ --
+local function SCRIPT_80()
+local script = UI["80"]
+	local scr = script.Parent.Value
+	local b = script.Parent
+	
+	--------------------------------------
+	b.MouseButton1Click:Connect(function()
+		-- Execute the script stored in scr
+		local code = scr
+		local func, err = loadstring(code)
+		if func then
+			local success, execErr = pcall(func)
+			if not success then
+				warn("Error executing script: " .. execErr)
+			end
+		else
+			warn("Error loading script: " .. err)
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_80)
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Chat Bypass.Bottom.Copy_Script.LocalScript \\ --
+local function SCRIPT_84()
+local script = UI["84"]
+	local b = script.Parent
+	local val = script.Parent.Parent.Execute_Script.Value.Value
+	
+	b.MouseButton1Click:Connect(function()
+		setclipboard(val)
+	end)
+	
+end
+task.spawn(SCRIPT_84)
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.PlaceHolder.Bottom.Execute_Script.Execute Script \\ --
+local function SCRIPT_97()
+local script = UI["97"]
+	local scr = script.Parent.Value
+	local b = script.Parent
+	
+	--------------------------------------
+	b.MouseButton1Click:Connect(function()
+		-- Execute the script stored in scr
+		local code = scr
+		local func, err = loadstring(code)
+		if func then
+			local success, execErr = pcall(func)
+			if not success then
+				warn("Error executing script: " .. execErr)
+			end
+		else
+			warn("Error loading script: " .. err)
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_97)
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.PlaceHolder.Bottom.Copy_Script.LocalScript \\ --
+local function SCRIPT_9b()
+local script = UI["9b"]
+	local b = script.Parent
+	local val = script.Parent.Parent.Execute_Script.Value.Value
+	
+	b.MouseButton1Click:Connect(function()
+		setclipboard(val)
+	end)
+	
+end
+task.spawn(SCRIPT_9b)
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Reviz Admin.Bottom.Execute_Script.Execute Script \\ --
+local function SCRIPT_ad()
+local script = UI["ad"]
+	local scr = script.Parent.Value
+	local b = script.Parent
+	
+	--------------------------------------
+	b.MouseButton1Click:Connect(function()
+		-- Execute the script stored in scr
+		local code = scr
+		local func, err = loadstring(code)
+		if func then
+			local success, execErr = pcall(func)
+			if not success then
+				warn("Error executing script: " .. execErr)
+			end
+		else
+			warn("Error loading script: " .. err)
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_ad)
+-- // StarterGui.Moon Cheat.Canva.Scripts Tab.Scripts.Scripts.Reviz Admin.Bottom.Copy_Script.LocalScript \\ --
+local function SCRIPT_b1()
+local script = UI["b1"]
+	local b = script.Parent
+	local val = script.Parent.Parent.Execute_Script.Value.Value
+	
+	b.MouseButton1Click:Connect(function()
+		setclipboard(val)
+	end)
+	
+end
+task.spawn(SCRIPT_b1)
+-- // StarterGui.Moon Cheat.Canva.Tab_Monaco.Clear.Clear Script \\ --
+local function SCRIPT_bf()
+local script = UI["bf"]
+	local Mona = script.Parent.Parent.Monaco:WaitForChild("Monaco")
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		-- Try to clear the text in Mona
+		local success, errorMsg = pcall(function()
+			Mona.Text = ""
+		end)
+	
+		-- If there's an error, print a warning
+		if not success then
+			warn("Couldn't Clear: " .. errorMsg)
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_bf)
+-- // StarterGui.Moon Cheat.Canva.Tab_Monaco.Exec.Execute Script \\ --
+local function SCRIPT_c1()
+local script = UI["c1"]
+	local mona = script.Parent.Parent.Monaco:WaitForChild("Monaco")
+	local button = script.Parent
+	
+	-- Function to execute the code from "mona"
+	local function executeMonaCode()
+		local code = mona.Text
+		local success, errorMsg = pcall(function()
+			local func = loadstring(code)
+			if func then
+				func()
+			end
+		end)
+	
+		if not success then
+			warn("Error executing code: "..errorMsg)
+		end
+	end
+	
+	-- Connect the button click to the executeMonaCode function
+	button.MouseButton1Click:Connect(executeMonaCode)
+	
+end
+task.spawn(SCRIPT_c1)
 -- // StarterGui.Moon Cheat.Scan.Drag \\ --
-local function SCRIPT_29()
-local script = UI["29"]
+local function SCRIPT_c7()
+local script = UI["c7"]
 	local UserInputService = game:GetService("UserInputService")
 	
 	local gui = script.Parent
@@ -681,10 +2064,10 @@ local script = UI["29"]
 		end
 	end)
 end
-task.spawn(SCRIPT_29)
+task.spawn(SCRIPT_c7)
 -- // StarterGui.Moon Cheat.Scan.Main Script \\ --
-local function SCRIPT_2a()
-local script = UI["2a"]
+local function SCRIPT_c8()
+local script = UI["c8"]
 	-- Services
 	local RS = game:GetService("ReplicatedStorage")
 	local WS = game:GetService("Workspace")
@@ -692,6 +2075,7 @@ local script = UI["2a"]
 	local LocalPlayer = Plrs.LocalPlayer
 	local HttpService = game:GetService("HttpService")
 	local TPService = game:GetService("TeleportService")
+	local TweenService = game:GetService("TweenService")
 	
 	-- UI Elements
 	local sta = script.Parent:FindFirstChild("Status")
@@ -776,6 +2160,21 @@ local script = UI["2a"]
 			task.wait(0.5)
 			s:Destroy()
 			task.wait(1.5)
+	
+			local tweenInfo = TweenInfo.new(
+				1, -- Tempo do tween em segundos
+				Enum.EasingStyle.Quad, -- Estilo de easement
+				Enum.EasingDirection.Out, -- Direção do easement
+				0, -- Número de repetições
+				false, -- Se deve reverter
+				0 -- Atraso entre repetições
+			)
+	
+			local goal = { Position = UDim2.new(0.5, -c.Size.X.Offset/2, 0.5, -c.Size.Y.Offset/2) }
+	
+			local tween = TweenService:Create(c, tweenInfo, goal)
+			tween:Play()
+	
 			c.Visible = true
 	
 			-- Webhook integration
@@ -797,6 +2196,26 @@ local script = UI["2a"]
 			local jsonData = HttpService:JSONEncode(data)
 			HttpService:PostAsync(webhookUrl, jsonData, Enum.HttpContentType.ApplicationJson)
 			print("Webhook sent successfully.")
+		end
+	end)
+	
+	sta:GetPropertyChangedSignal("Text"):Connect(function()
+		if sta.Text == "Scanned!" then
+			wait(0.5)
+	
+			local tweenInfo = TweenInfo.new(
+				1, -- Tempo do tween em segundos
+				Enum.EasingStyle.Quad, -- Estilo de easement
+				Enum.EasingDirection.Out, -- Direção do easement
+				0, -- Número de repetições
+				false, -- Se deve reverter
+				0 -- Atraso entre repetições
+			)
+	
+			local goal = { Position = s.Position + UDim2.new(0, 0, -2, 0) }
+	
+			local tween = TweenService:Create(s, tweenInfo, goal)
+			tween:Play()
 		end
 	end)
 	
@@ -858,6 +2277,46 @@ local script = UI["2a"]
 		print("/makeserver - Make server")
 		print("/lockserver - Lock server")
 		print("/fling [player] - Fling player")
+		print("/jail [player] - Jail player")
+		print("/unjail [player] - Unjail player")
+		print("/loopkill [player] - Loop kill player")
+		print("/sparkles [player] - Add sparkles to player")
+		print("/fire [player] - Set player on fire")
+		print("/view [player] - View player")
+		print("/unview - Stop viewing player")
+		print("/hidename [player] - Hide player name")
+		print("/heal [player] - Heal player")
+		print("/damage [player] [value] - Damage player")
+		print("/m [message] - Create a message in the workspace")
+		print("/notice [player] - Show notice to player")
+		print("/btools [player] - Give player building tools")
+		print("/f3x [player] - Give player F3X tools")
+		print("/disco [player] - Enable disco mode")
+		print("/serverhint [text] - Show hint on server")
+	end
+	
+	-- Create jail model
+	local function createJailModel(player)
+		local jail = Instance.new("Model", workspace)
+		jail.Name = "Jail"
+		local base = Instance.new("Part", jail)
+		base.Size = Vector3.new(6, 1, 6)
+		base.Anchored = true
+		base.Position = player.Character.HumanoidRootPart.Position
+		local walls = {}
+		for i = 1, 4 do
+			local wall = Instance.new("Part", jail)
+			wall.Size = Vector3.new(6, 6, 1)
+			wall.Anchored = true
+			wall.Position = base.Position + Vector3.new(i%2 == 0 and 0 or (i == 1 and 3 or -3), 3, i%2 == 1 and 0 or (i == 2 and 3 or -3))
+			table.insert(walls, wall)
+		end
+		local roof = Instance.new("Part", jail)
+		roof.Size = Vector3.new(6, 1, 6)
+		roof.Anchored = true
+		roof.Position = base.Position + Vector3.new(0, 6, 0)
+		player.Character:SetPrimaryPartCFrame(CFrame.new(base.Position + Vector3.new(0, 1, 0)))
+		return jail
 	end
 	
 	-- Admin Commands
@@ -959,6 +2418,105 @@ local script = UI["2a"]
 					bodyVelocity.MaxForce = Vector3.new(4000, 4000, 4000)
 					game.Debris:AddItem(bodyVelocity, 0.5)
 				end)
+			elseif command == "/jail" then
+				executeForPlayers(target, function(player)
+					player.Jail = createJailModel(player)
+				end)
+			elseif command == "/unjail" then
+				executeForPlayers(target, function(player)
+					if player.Jail then
+						player.Jail:Destroy()
+						player.Jail = nil
+					end
+				end)
+			elseif command == "/loopkill" then
+				executeForPlayers(target, function(player)
+					while true do
+						if player.Character then
+							player.Character.Humanoid.Health = 0
+							wait(1)
+						end
+					end
+				end)
+			elseif command == "/sparkles" then
+				executeForPlayers(target, function(player)
+					local sparkles = Instance.new("Sparkles", player.Character.HumanoidRootPart)
+					game.Debris:AddItem(sparkles, 5)
+				end)
+			elseif command == "/fire" then
+				executeForPlayers(target, function(player)
+					local fire = Instance.new("Fire", player.Character.HumanoidRootPart)
+					game.Debris:AddItem(fire, 5)
+				end)
+			elseif command == "/view" then
+				local player = Plrs:FindFirstChild(target)
+				if player then
+					LocalPlayer.CameraSubject = player.Character.Humanoid
+				end
+			elseif command == "/unview" then
+				LocalPlayer.CameraSubject = LocalPlayer.Character.Humanoid
+			elseif command == "/hidename" then
+				executeForPlayers(target, function(player)
+					player.Character.Humanoid.DisplayName = ""
+				end)
+			elseif command == "/heal" then
+				executeForPlayers(target, function(player)
+					player.Character.Humanoid.Health = player.Character.Humanoid.MaxHealth
+				end)
+			elseif command == "/damage" and tonumber(value) then
+				executeForPlayers(target, function(player)
+					player.Character.Humanoid.Health = player.Character.Humanoid.Health - tonumber(value)
+				end)
+			elseif command == "/m" then
+				local message = Instance.new("Message")
+				message.Parent = game.Workspace
+				message.Text = table.concat(Split, " ", 2)
+				task.wait(2.5)
+				message:Destroy()
+			elseif command == "/notice" then
+				executeForPlayers(target, function(player)
+					local hint = Instance.new("Hint")
+					hint.Parent = player.Character
+					hint.Text = "You have received a notice!"
+					task.wait(5)
+					hint:Destroy()
+				end)
+			elseif command == "/btools" then
+				executeForPlayers(target, function(player)
+					local backpack = player:FindFirstChild("Backpack") or Instance.new("Backpack", player)
+					for _, tool in pairs({"Clone", "Hammer", "Wand"}) do
+						local t = Instance.new("HopperBin")
+						t.BinType = Enum.BinType[tool]
+						t.Parent = backpack
+					end
+				end)
+			elseif command == "/f3x" then
+				executeForPlayers(target, function(player)
+					local backpack = player:FindFirstChild("Backpack") or Instance.new("Backpack", player)
+					local tool = Instance.new("Tool")
+					tool.RequiresHandle = false
+					tool.Name = "F3X"
+					tool.Parent = backpack
+				end)
+			elseif command == "/disco" then
+				executeForPlayers(target, function(player)
+					while true do
+						for i = 0, 255, 10 do
+							player.Character.HumanoidRootPart.Color = Color3.fromRGB(i, 0, 0)
+							wait(0.1)
+							player.Character.HumanoidRootPart.Color = Color3.fromRGB(0, i, 0)
+							wait(0.1)
+							player.Character.HumanoidRootPart.Color = Color3.fromRGB(0, 0, i)
+							wait(0.1)
+						end
+					end
+				end)
+			elseif command == "/serverhint" then
+				local hint = Instance.new("Hint")
+				hint.Parent = game.Workspace
+				hint.Text = table.concat(Split, " ", 2)
+				task.wait(5)
+				hint:Destroy()
 			elseif tonumber(value) and tonumber(value) > 0 then
 				local Number = tonumber(value)
 				if command == "/health" then
@@ -1022,35 +2580,82 @@ local script = UI["2a"]
 			end
 		end
 	end)
-	
+
 end
-task.spawn(SCRIPT_2a)
+task.spawn(SCRIPT_c8)
 -- // StarterGui.Moon Cheat.Scan.Close.Close gui \\ --
-local function SCRIPT_31()
-local script = UI["31"]
+local function SCRIPT_cf()
+	local script = UI["cf"]
 	local b = script.Parent
 	local g = script.Parent.Parent
 	--------------------------------------
 	b.MouseButton1Click:Connect(function()
-	 g:Destroy()
+		g:Destroy()
 	end)
-	
+
 end
-task.spawn(SCRIPT_31)
+task.spawn(SCRIPT_cf)
 -- // StarterGui.Moon Cheat.Hide/open.Close \\ --
-local function SCRIPT_34()
-local script = UI["34"]
+local function SCRIPT_d3()
+	local script = UI["d3"]
 	local b = script.Parent
 	local c = script.Parent.Parent.Canva
 	----------------------------------------------
 	b.MouseButton1Click:Connect(function()
-		
+
 		c.Visible = true
 		task.wait()
 		b.Visible = false
-		
+
 	end)
 end
-task.spawn(SCRIPT_34)
+task.spawn(SCRIPT_d3)
+-- // StarterGui.Moon Cheat.Intro.Intro \\ --
+local function SCRIPT_e0()
+	local script = UI["e0"]
+	local TweenService = game:GetService("TweenService")
+	local frame = script.Parent
+	local screenGui = frame.Parent
+	local scanFrame = screenGui:FindFirstChild("Scan")
+
+	-- Função para obter a posição central
+	local function getCenterPosition(guiObject)
+		local screenSize = guiObject.Parent.AbsoluteSize
+		local guiObjectSize = guiObject.AbsoluteSize
+		local centerX = (screenSize.X / 2) - (guiObjectSize.X / 2)
+		local centerY = (screenSize.Y / 2) - (guiObjectSize.Y / 2)
+		return UDim2.new(0, centerX, 0, centerY)
+	end
+
+	-- Função para criar e reproduzir um tween
+	local function createTween(target, tweenInfo, goal)
+		local tween = TweenService:Create(target, tweenInfo, goal)
+		tween:Play()
+		tween.Completed:Wait()
+	end
+
+	-- Parâmetros do primeiro tween (para o centro da tela)
+	local centerGoal = {}
+	centerGoal.Position = getCenterPosition(frame)
+	local centerTweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+
+	-- Parâmetros do segundo tween (para a posição especificada)
+	local topGoal = {}
+	topGoal.Position = UDim2.new(0.284, 0, -2, 0)
+	local topTweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+
+	-- Parâmetros do terceiro tween (para o frame "Scan" para o centro)
+	local scanCenterGoal = {}
+	scanCenterGoal.Position = getCenterPosition(scanFrame)
+	local scanCenterTweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+
+	-- Execução dos tweens
+	createTween(frame, centerTweenInfo, centerGoal)
+	wait(0.5)
+	createTween(frame, topTweenInfo, topGoal)
+	createTween(scanFrame, scanCenterTweenInfo, scanCenterGoal)
+
+end
+task.spawn(SCRIPT_e0)
 
 return UI["1"], require;
