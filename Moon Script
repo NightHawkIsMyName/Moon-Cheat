@@ -1,6 +1,6 @@
 -- // GUI TO LUA \\ --
 
--- // INSTANCES: 232 | SCRIPTS: 31 | MODULES: 0 \\ --
+-- // INSTANCES: 228 | SCRIPTS: 30 | MODULES: 0 \\ --
 
 local UI = {}
 
@@ -12,10 +12,11 @@ UI["1"]["ResetOnSpawn"] = false
 
 -- // StarterGui.Moon Cheat.Canva \\ --
 UI["2"] = Instance.new("Frame", UI["1"])
+UI["2"]["Visible"] = false
 UI["2"]["BorderSizePixel"] = 0
 UI["2"]["BackgroundColor3"] = Color3.fromRGB(129, 135, 255)
 UI["2"]["Size"] = UDim2.new(0, 690, 0, 388)
-UI["2"]["Position"] = UDim2.new(0.129, 0, 2, 0)
+UI["2"]["Position"] = UDim2.new(0.129, 0, 0, 0)
 UI["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
 UI["2"]["Name"] = [[Canva]]
 
@@ -195,7 +196,6 @@ UI["16"]["BackgroundTransparency"] = 1
 
 -- // StarterGui.Moon Cheat.Canva.Scripts Tab.Search \\ --
 UI["17"] = Instance.new("TextBox", UI["16"])
-UI["17"]["CursorPosition"] = -1
 UI["17"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
 UI["17"]["PlaceholderColor3"] = Color3.fromRGB(68, 68, 68)
 UI["17"]["BorderSizePixel"] = 0
@@ -1368,7 +1368,7 @@ UI["c6"] = Instance.new("Frame", UI["1"])
 UI["c6"]["BorderSizePixel"] = 0
 UI["c6"]["BackgroundColor3"] = Color3.fromRGB(129, 135, 255)
 UI["c6"]["Size"] = UDim2.new(0, 400, 0, 244)
-UI["c6"]["Position"] = UDim2.new(0.285, 0, -2, 0)
+UI["c6"]["Position"] = UDim2.new(0.285, 0, 2, 0)
 UI["c6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
 UI["c6"]["Name"] = [[Scan]]
 
@@ -1407,87 +1407,87 @@ UI["c9"] = Instance.new("UICorner", UI["c8"])
 UI["ca"] = Instance.new("UICorner", UI["c6"])
 
 
--- // StarterGui.Moon Cheat.Scan.Drag \\ --
-UI["cb"] = Instance.new("LocalScript", UI["c6"])
-UI["cb"]["Name"] = [[Drag]]
-
 -- // StarterGui.Moon Cheat.Scan.Main Script \\ --
-UI["cc"] = Instance.new("LocalScript", UI["c6"])
-UI["cc"]["Name"] = [[Main Script]]
+UI["cb"] = Instance.new("LocalScript", UI["c6"])
+UI["cb"]["Name"] = [[Main Script]]
 
 -- // StarterGui.Moon Cheat.Scan.Button \\ --
-UI["cd"] = Instance.new("TextButton", UI["c6"])
-UI["cd"]["BorderSizePixel"] = 0
-UI["cd"]["TextSize"] = 30
-UI["cd"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["cd"]["BackgroundColor3"] = Color3.fromRGB(101, 106, 201)
-UI["cd"]["FontFace"] = Font.new([[rbxassetid://12187607722]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["cd"]["ZIndex"] = 3
-UI["cd"]["Size"] = UDim2.new(0, 200, 0, 50)
-UI["cd"]["Name"] = [[Button]]
-UI["cd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["cd"]["Text"] = [[Scan]]
-UI["cd"]["Position"] = UDim2.new(0.25, 0, 0.52459, 0)
+UI["cc"] = Instance.new("TextButton", UI["c6"])
+UI["cc"]["BorderSizePixel"] = 0
+UI["cc"]["TextSize"] = 30
+UI["cc"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["cc"]["BackgroundColor3"] = Color3.fromRGB(101, 106, 201)
+UI["cc"]["FontFace"] = Font.new([[rbxassetid://12187607722]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["cc"]["ZIndex"] = 3
+UI["cc"]["Size"] = UDim2.new(0, 200, 0, 50)
+UI["cc"]["Name"] = [[Button]]
+UI["cc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["cc"]["Text"] = [[Scan]]
+UI["cc"]["Position"] = UDim2.new(0.25, 0, 0.52459, 0)
 
 -- // StarterGui.Moon Cheat.Scan.Button.UICorner \\ --
-UI["ce"] = Instance.new("UICorner", UI["cd"])
+UI["cd"] = Instance.new("UICorner", UI["cc"])
 
 
 -- // StarterGui.Moon Cheat.Scan.Logo \\ --
-UI["cf"] = Instance.new("ImageLabel", UI["c6"])
-UI["cf"]["ZIndex"] = 564564
-UI["cf"]["BorderSizePixel"] = 0
-UI["cf"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["cf"]["Image"] = [[rbxassetid://18518737392]]
-UI["cf"]["Size"] = UDim2.new(0, 50, 0, 50)
-UI["cf"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["cf"]["BackgroundTransparency"] = 1
-UI["cf"]["Name"] = [[Logo]]
-UI["cf"]["Position"] = UDim2.new(0.01739, 0, 0.02062, 0)
+UI["ce"] = Instance.new("ImageLabel", UI["c6"])
+UI["ce"]["ZIndex"] = 564564
+UI["ce"]["BorderSizePixel"] = 0
+UI["ce"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["ce"]["Image"] = [[rbxassetid://18518737392]]
+UI["ce"]["Size"] = UDim2.new(0, 50, 0, 50)
+UI["ce"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["ce"]["BackgroundTransparency"] = 1
+UI["ce"]["Name"] = [[Logo]]
+UI["ce"]["Position"] = UDim2.new(0.01739, 0, 0.02062, 0)
 
 -- // StarterGui.Moon Cheat.Scan.Logo.Text \\ --
-UI["d0"] = Instance.new("TextLabel", UI["cf"])
-UI["d0"]["TextWrapped"] = true
-UI["d0"]["TextStrokeTransparency"] = 0
-UI["d0"]["ZIndex"] = 23432
-UI["d0"]["BorderSizePixel"] = 0
-UI["d0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["d0"]["TextSize"] = 38
-UI["d0"]["FontFace"] = Font.new([[rbxassetid://12187607722]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["d0"]["TextColor3"] = Color3.fromRGB(152, 162, 255)
-UI["d0"]["BackgroundTransparency"] = 1
-UI["d0"]["Size"] = UDim2.new(0, 70, 0, 46)
-UI["d0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["d0"]["Text"] = [[Moon]]
-UI["d0"]["Name"] = [[Text]]
-UI["d0"]["Position"] = UDim2.new(1.01517, 0, 0.06897, 0)
+UI["cf"] = Instance.new("TextLabel", UI["ce"])
+UI["cf"]["TextWrapped"] = true
+UI["cf"]["TextStrokeTransparency"] = 0
+UI["cf"]["ZIndex"] = 23432
+UI["cf"]["BorderSizePixel"] = 0
+UI["cf"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["cf"]["TextSize"] = 38
+UI["cf"]["FontFace"] = Font.new([[rbxassetid://12187607722]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["cf"]["TextColor3"] = Color3.fromRGB(152, 162, 255)
+UI["cf"]["BackgroundTransparency"] = 1
+UI["cf"]["Size"] = UDim2.new(0, 70, 0, 46)
+UI["cf"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["cf"]["Text"] = [[Moon]]
+UI["cf"]["Name"] = [[Text]]
+UI["cf"]["Position"] = UDim2.new(1.01517, 0, 0.06897, 0)
 
 -- // StarterGui.Moon Cheat.Scan.Close \\ --
-UI["d1"] = Instance.new("TextButton", UI["c6"])
-UI["d1"]["BorderSizePixel"] = 0
-UI["d1"]["TextSize"] = 30
-UI["d1"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["d1"]["BackgroundColor3"] = Color3.fromRGB(101, 106, 201)
-UI["d1"]["FontFace"] = Font.new([[rbxassetid://12187607722]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["d1"]["ZIndex"] = 3
-UI["d1"]["Size"] = UDim2.new(0, 45, 0, 44)
-UI["d1"]["BackgroundTransparency"] = 1
-UI["d1"]["Name"] = [[Close]]
-UI["d1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["d1"]["Text"] = [[X]]
-UI["d1"]["Position"] = UDim2.new(0.8875, 0, 0, 0)
+UI["d0"] = Instance.new("TextButton", UI["c6"])
+UI["d0"]["BorderSizePixel"] = 0
+UI["d0"]["TextSize"] = 30
+UI["d0"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["d0"]["BackgroundColor3"] = Color3.fromRGB(101, 106, 201)
+UI["d0"]["FontFace"] = Font.new([[rbxassetid://12187607722]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["d0"]["ZIndex"] = 3
+UI["d0"]["Size"] = UDim2.new(0, 45, 0, 44)
+UI["d0"]["BackgroundTransparency"] = 1
+UI["d0"]["Name"] = [[Close]]
+UI["d0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["d0"]["Text"] = [[X]]
+UI["d0"]["Position"] = UDim2.new(0.8875, 0, 0, 0)
 
 -- // StarterGui.Moon Cheat.Scan.Close.UICorner \\ --
-UI["d2"] = Instance.new("UICorner", UI["d1"])
+UI["d1"] = Instance.new("UICorner", UI["d0"])
 
 
 -- // StarterGui.Moon Cheat.Scan.Close.Close gui \\ --
-UI["d3"] = Instance.new("LocalScript", UI["d1"])
-UI["d3"]["Name"] = [[Close gui]]
+UI["d2"] = Instance.new("LocalScript", UI["d0"])
+UI["d2"]["Name"] = [[Close gui]]
 
 -- // StarterGui.Moon Cheat.Scan.UIStroke \\ --
-UI["d4"] = Instance.new("UIStroke", UI["c6"])
-UI["d4"]["Thickness"] = 2
+UI["d3"] = Instance.new("UIStroke", UI["c6"])
+UI["d3"]["Thickness"] = 2
+
+-- // StarterGui.Moon Cheat.Scan.Drag \\ --
+UI["d4"] = Instance.new("LocalScript", UI["c6"])
+UI["d4"]["Name"] = [[Drag]]
 
 -- // StarterGui.Moon Cheat.Hide/open \\ --
 UI["d5"] = Instance.new("ImageButton", UI["1"])
@@ -1508,116 +1508,90 @@ UI["d6"] = Instance.new("UICorner", UI["d5"])
 UI["d7"] = Instance.new("LocalScript", UI["d5"])
 UI["d7"]["Name"] = [[Close]]
 
--- // StarterGui.Moon Cheat.Skys \\ --
-UI["d8"] = Instance.new("Folder", UI["1"])
-UI["d8"]["Name"] = [[Skys]]
-
--- // StarterGui.Moon Cheat.Skys.Scary Skybox \\ --
-UI["d9"] = Instance.new("Sky", UI["d8"])
-UI["d9"]["MoonTextureId"] = [[http://www.roblox.com/asset/?id=1243374078]]
-UI["d9"]["SunTextureId"] = [[http://www.roblox.com/asset/?id=1243374078]]
-UI["d9"]["SkyboxUp"] = [[http://www.roblox.com/asset/?id=1243374078]]
-UI["d9"]["SkyboxDn"] = [[http://www.roblox.com/asset/?id=1243374078]]
-UI["d9"]["SkyboxBk"] = [[http://www.roblox.com/asset/?id=1243374078]]
-UI["d9"]["SkyboxFt"] = [[http://www.roblox.com/asset/?id=1243374078]]
-UI["d9"]["Name"] = [[Scary Skybox]]
-UI["d9"]["SkyboxLf"] = [[http://www.roblox.com/asset/?id=1243374078]]
-UI["d9"]["SkyboxRt"] = [[http://www.roblox.com/asset/?id=1243374078]]
-
--- // StarterGui.Moon Cheat.Decals \\ --
-UI["da"] = Instance.new("Folder", UI["1"])
-UI["da"]["Name"] = [[Decals]]
-
--- // StarterGui.Moon Cheat.Decals.Admin \\ --
-UI["db"] = Instance.new("LocalScript", UI["da"])
-UI["db"]["Name"] = [[Admin]]
-
--- // StarterGui.Moon Cheat.Game Supported Detector \\ --
-UI["dc"] = Instance.new("LocalScript", UI["1"])
-UI["dc"]["Enabled"] = false
-UI["dc"]["Name"] = [[Game Supported Detector]]
-UI["dc"]["Disabled"] = true
-
 -- // StarterGui.Moon Cheat.Intro \\ --
-UI["dd"] = Instance.new("Frame", UI["1"])
-UI["dd"]["BorderSizePixel"] = 0
-UI["dd"]["BackgroundColor3"] = Color3.fromRGB(129, 135, 255)
-UI["dd"]["Size"] = UDim2.new(0.38411, 0, 0.41724, 0)
-UI["dd"]["Position"] = UDim2.new(0.317, 0, 2, 0)
-UI["dd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["dd"]["Name"] = [[Intro]]
+UI["d8"] = Instance.new("Frame", UI["1"])
+UI["d8"]["BorderSizePixel"] = 0
+UI["d8"]["BackgroundColor3"] = Color3.fromRGB(129, 135, 255)
+UI["d8"]["Size"] = UDim2.new(0.38411, 0, 0.41724, 0)
+UI["d8"]["Position"] = UDim2.new(0.317, 0, 2, 0)
+UI["d8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["d8"]["Name"] = [[Intro]]
 
 -- // StarterGui.Moon Cheat.Intro.BG \\ --
-UI["de"] = Instance.new("ImageLabel", UI["dd"])
-UI["de"]["BorderSizePixel"] = 0
-UI["de"]["BackgroundColor3"] = Color3.fromRGB(129, 135, 255)
-UI["de"]["ImageColor3"] = Color3.fromRGB(114, 114, 114)
-UI["de"]["Image"] = [[http://www.roblox.com/asset/?id=64212796]]
-UI["de"]["Size"] = UDim2.new(1, 0, 1, 0)
-UI["de"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["de"]["Name"] = [[BG]]
+UI["d9"] = Instance.new("ImageLabel", UI["d8"])
+UI["d9"]["BorderSizePixel"] = 0
+UI["d9"]["BackgroundColor3"] = Color3.fromRGB(129, 135, 255)
+UI["d9"]["ImageColor3"] = Color3.fromRGB(114, 114, 114)
+UI["d9"]["Image"] = [[http://www.roblox.com/asset/?id=64212796]]
+UI["d9"]["Size"] = UDim2.new(1, 0, 1, 0)
+UI["d9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["d9"]["Name"] = [[BG]]
 
 -- // StarterGui.Moon Cheat.Intro.BG.UICorner \\ --
-UI["df"] = Instance.new("UICorner", UI["de"])
+UI["da"] = Instance.new("UICorner", UI["d9"])
 
 
 -- // StarterGui.Moon Cheat.Intro.BG.UIAspectRatioConstraint \\ --
-UI["e0"] = Instance.new("UIAspectRatioConstraint", UI["de"])
-UI["e0"]["AspectRatio"] = 1.63934
+UI["db"] = Instance.new("UIAspectRatioConstraint", UI["d9"])
+UI["db"]["AspectRatio"] = 1.63934
 
 -- // StarterGui.Moon Cheat.Intro.UICorner \\ --
-UI["e1"] = Instance.new("UICorner", UI["dd"])
+UI["dc"] = Instance.new("UICorner", UI["d8"])
 
 
 -- // StarterGui.Moon Cheat.Intro.Logo \\ --
-UI["e2"] = Instance.new("ImageLabel", UI["dd"])
-UI["e2"]["ZIndex"] = 564564
-UI["e2"]["BorderSizePixel"] = 0
-UI["e2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["e2"]["Image"] = [[rbxassetid://18518737392]]
-UI["e2"]["Size"] = UDim2.new(0.43361, 0, 0.6191, 0)
-UI["e2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["e2"]["BackgroundTransparency"] = 1
-UI["e2"]["Name"] = [[Logo]]
-UI["e2"]["Position"] = UDim2.new(0.33879, 0, 0.06351, 0)
+UI["dd"] = Instance.new("ImageLabel", UI["d8"])
+UI["dd"]["ZIndex"] = 564564
+UI["dd"]["BorderSizePixel"] = 0
+UI["dd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["dd"]["Image"] = [[rbxassetid://18518737392]]
+UI["dd"]["Size"] = UDim2.new(0.43361, 0, 0.6191, 0)
+UI["dd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["dd"]["BackgroundTransparency"] = 1
+UI["dd"]["Name"] = [[Logo]]
+UI["dd"]["Position"] = UDim2.new(0.33879, 0, 0.06351, 0)
 
 -- // StarterGui.Moon Cheat.Intro.Logo.UIAspectRatioConstraint \\ --
-UI["e3"] = Instance.new("UIAspectRatioConstraint", UI["e2"])
+UI["de"] = Instance.new("UIAspectRatioConstraint", UI["dd"])
 
 
 -- // StarterGui.Moon Cheat.Intro.UIStroke \\ --
-UI["e4"] = Instance.new("UIStroke", UI["dd"])
-UI["e4"]["Thickness"] = 2
+UI["df"] = Instance.new("UIStroke", UI["d8"])
+UI["df"]["Thickness"] = 2
 
 -- // StarterGui.Moon Cheat.Intro.Intro \\ --
-UI["e5"] = Instance.new("LocalScript", UI["dd"])
-UI["e5"]["Name"] = [[Intro]]
+UI["e0"] = Instance.new("LocalScript", UI["d8"])
+UI["e0"]["Name"] = [[Intro]]
 
 -- // StarterGui.Moon Cheat.Intro.UIAspectRatioConstraint \\ --
-UI["e6"] = Instance.new("UIAspectRatioConstraint", UI["dd"])
-UI["e6"]["AspectRatio"] = 1.63934
+UI["e1"] = Instance.new("UIAspectRatioConstraint", UI["d8"])
+UI["e1"]["AspectRatio"] = 1.63934
 
 -- // StarterGui.Moon Cheat.Intro.TEEXT \\ --
-UI["e7"] = Instance.new("TextLabel", UI["dd"])
-UI["e7"]["TextWrapped"] = true
-UI["e7"]["TextStrokeTransparency"] = 0
-UI["e7"]["ZIndex"] = 23432
-UI["e7"]["BorderSizePixel"] = 0
-UI["e7"]["TextScaled"] = true
-UI["e7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["e7"]["TextSize"] = 38
-UI["e7"]["FontFace"] = Font.new([[rbxassetid://12187607722]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["e7"]["TextColor3"] = Color3.fromRGB(152, 162, 255)
-UI["e7"]["BackgroundTransparency"] = 1
-UI["e7"]["Size"] = UDim2.new(1.616, 0, 0.528, 0)
-UI["e7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["e7"]["Text"] = [[Moon]]
-UI["e7"]["Name"] = [[TEEXT]]
-UI["e7"]["Position"] = UDim2.new(-0.00383, 0, 0.54851, 0)
+UI["e2"] = Instance.new("TextLabel", UI["d8"])
+UI["e2"]["TextWrapped"] = true
+UI["e2"]["TextStrokeTransparency"] = 0
+UI["e2"]["ZIndex"] = 23432
+UI["e2"]["BorderSizePixel"] = 0
+UI["e2"]["TextScaled"] = true
+UI["e2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["e2"]["TextSize"] = 38
+UI["e2"]["FontFace"] = Font.new([[rbxassetid://12187607722]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["e2"]["TextColor3"] = Color3.fromRGB(152, 162, 255)
+UI["e2"]["BackgroundTransparency"] = 1
+UI["e2"]["Size"] = UDim2.new(1.616, 0, 0.528, 0)
+UI["e2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e2"]["Text"] = [[Moon]]
+UI["e2"]["Name"] = [[TEEXT]]
+UI["e2"]["Position"] = UDim2.new(-0.00383, 0, 0.54851, 0)
 
 -- // StarterGui.Moon Cheat.Intro.TEEXT.UIAspectRatioConstraint \\ --
-UI["e8"] = Instance.new("UIAspectRatioConstraint", UI["e7"])
-UI["e8"]["AspectRatio"] = 3.06061
+UI["e3"] = Instance.new("UIAspectRatioConstraint", UI["e2"])
+UI["e3"]["AspectRatio"] = 3.06061
+
+-- // StarterGui.Moon Cheat.Admin \\ --
+UI["e4"] = Instance.new("LocalScript", UI["1"])
+UI["e4"]["Name"] = [[Admin]]
 
 -- // StarterGui.Moon Cheat.Canva.Dragify \\ --
 local function SCRIPT_6()
@@ -1703,7 +1677,7 @@ local script = UI["f"]
 		-- Call updateImage every 1 second
 		while true do
 			updateImage()
-			wait(1)
+			wait(10)
 		end
 	end
 	
@@ -2126,9 +2100,168 @@ local script = UI["c4"]
 	
 end
 task.spawn(SCRIPT_c4)
--- // StarterGui.Moon Cheat.Scan.Drag \\ --
+-- // StarterGui.Moon Cheat.Scan.Main Script \\ --
 local function SCRIPT_cb()
 local script = UI["cb"]
+	-- Services
+	local TweenService = game:GetService("TweenService")
+	local HttpService = game:GetService("HttpService")
+	local Plrs = game:GetService("Players")
+	
+	-- UI Elements
+	local sta = script.Parent:FindFirstChild("Status")
+	local b = script.Parent:FindFirstChild("Button")
+	local s = script.Parent
+	local c = script.Parent.Parent:FindFirstChild("Canva")
+	
+	-- Blacklist
+	local blacklist = {
+		"Player1",
+		"Player2",
+		"Player3"
+	}
+	
+	-- Webhook URL
+	local webhookUrl = "https://discord.com/api/webhooks/1263003805989994526/f61TIamGezT6qg7GvwZlf3kwJsNqrJvNwCk9aMMb90DfZuSV5ubjWOkOvMMrEfzJUOYx"
+	
+	-- Function to check if a player is blacklisted
+	local function isPlayerBlacklisted(playerName)
+		for _, name in ipairs(blacklist) do
+			if name == playerName then
+				return true
+			end
+		end
+		return false
+	end
+	
+	-- Initial verification of elements
+	print("Status Element: ", sta)
+	print("Button Element: ", b)
+	print("Canvas Element: ", c)
+	
+	if not (sta and b and c) then
+		print("One or more elements were not found.")
+		return
+	end
+	
+	b.MouseButton1Click:Connect(function()
+		local player = Plrs.LocalPlayer
+		local playerName = player.Name
+		print("Button clicked by player: ", playerName)
+	
+		b.Visible = false
+		sta.Visible = true
+		sta.Text = "Scanning."
+		task.wait(1)
+		sta.Text = "Scanning.."
+		task.wait(1)
+		sta.Text = "Scanning..."
+		task.wait(1)
+		sta.TextColor3 = Color3.fromRGB(50, 255, 30) -- Change text color to green
+		sta.Text = "Scanned!" -- Final message
+		print("Final status: ", sta.Text)
+	
+		if sta.Text == "Scanned!" then
+			if isPlayerBlacklisted(playerName) then
+				sta.Text = "Access Denied."
+				sta.TextColor3 = Color3.fromRGB(255, 0, 0) -- Change text color to red
+				task.wait()
+				player:Kick("Access Denied. Contact a developer or try again later.")
+				return
+			end
+	
+			-- Create a hint and message in the workspace
+			local hint = Instance.new("Hint")
+			hint.Parent = game.Workspace
+			hint.Text = "Moon On Top!"
+			print("Hint created and displayed in Workspace.")
+	
+			local message = Instance.new("Message")
+			message.Parent = game.Workspace
+			message.Text = "Moon On Top!"
+			print("Message created and displayed in Workspace.")
+			task.wait(2)
+			message:Destroy()
+	
+			task.wait(0.5)
+			s:Destroy()
+			task.wait(1.5)
+	
+			local tweenInfo = TweenInfo.new(
+				1, -- Tempo do tween em segundos
+				Enum.EasingStyle.Quad, -- Estilo de easement
+				Enum.EasingDirection.Out, -- Direção do easement
+				0, -- Número de repetições
+				false, -- Se deve reverter
+				0 -- Atraso entre repetições
+			)
+	
+			local goal = { Position = UDim2.new(0.5, -c.Size.X.Offset / 2, 0.5, -c.Size.Y.Offset / 2) }
+	
+			local tween = TweenService:Create(c, tweenInfo, goal)
+			tween:Play()
+	
+			c.Visible = true
+	
+			-- Webhook integration
+			local data = {
+				content = "A player has scanned successfully!",
+				embeds = {{
+					title = "Player Scanned!",
+					description = string.format("**Game ID:** %d\n**Game Image:** %s\n**Player Name:** %s\n**Player DisplayName:** %s\n**Date/Time:** %s",
+						game.PlaceId,
+						game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).IconImageAssetId,
+						playerName,
+						player.DisplayName,
+						os.date("%Y-%m-%d %H:%M:%S")
+					),
+					color = 65280 -- Green color
+				}}
+			}
+	
+			local jsonData = HttpService:JSONEncode(data)
+			HttpService:PostAsync(webhookUrl, jsonData, Enum.HttpContentType.ApplicationJson)
+			print("Webhook sent successfully.")
+		end
+	end)
+	
+	sta:GetPropertyChangedSignal("Text"):Connect(function()
+		if sta.Text == "Scanned!" then
+			task.wait(0.5)
+	
+			local tweenInfo = TweenInfo.new(
+				1, -- Tempo do tween em segundos
+				Enum.EasingStyle.Quad, -- Estilo de easement
+				Enum.EasingDirection.Out, -- Direção do easement
+				0, -- Número de repetições
+				false, -- Se deve reverter
+				0 -- Atraso entre repetições
+			)
+	
+			local goal = { Position = s.Position + UDim2.new(0, 0, -2, 0) }
+	
+			local tween = TweenService:Create(s, tweenInfo, goal)
+			tween:Play()
+		end
+	end)
+	
+end
+task.spawn(SCRIPT_cb)
+-- // StarterGui.Moon Cheat.Scan.Close.Close gui \\ --
+local function SCRIPT_d2()
+local script = UI["d2"]
+	local b = script.Parent
+	local g = script.Parent.Parent
+	--------------------------------------
+	b.MouseButton1Click:Connect(function()
+	 g:Destroy()
+	end)
+	
+end
+task.spawn(SCRIPT_d2)
+-- // StarterGui.Moon Cheat.Scan.Drag \\ --
+local function SCRIPT_d4()
+local script = UI["d4"]
 	local UserInputService = game:GetService("UserInputService")
 	
 	local gui = script.Parent
@@ -2169,173 +2302,7 @@ local script = UI["cb"]
 		end
 	end)
 end
-task.spawn(SCRIPT_cb)
--- // StarterGui.Moon Cheat.Scan.Main Script \\ --
-local function SCRIPT_cc()
-local script = UI["cc"]
-	-- Services 🚀
-	local RS = game:GetService("ReplicatedStorage")
-	local WS = game:GetService("Workspace")
-	local Players = game:GetService("Players")
-	local LocalPlayer = Players.LocalPlayer
-	local HttpService = game:GetService("HttpService")
-	local TPService = game:GetService("TeleportService")
-	local TweenService = game:GetService("TweenService")
-	
-	-- UI Elements 🖌️
-	local statusLabel = script.Parent:FindFirstChild("Status")
-	local button = script.Parent:FindFirstChild("Button")
-	local scriptParent = script.Parent
-	local canvas = script.Parent.Parent:FindFirstChild("Canvas")
-	
-	-- Blacklist 🚫
-	local blacklist = {
-		{ name = "Player1", reason = "No Reason Set", addedBy = "1" },
-		{ name = "Player2", reason = "No Reason Set", addedBy = "1" },
-		{ name = "Player3", reason = "No Reason Set", addedBy = "1" },
-		-- add
-	}
-	
-	-- Webhook URL 🌐
-	local webhookUrl = "https://discord.com/api/webhooks/1263003805989994526/f61TIamGezT6qg7GvwZlf3kwJsNqrJvNwCk9aMMb90DfZuSV5ubjWOkOvMMrEfzJUOYx"
-	
-	-- Function to check if a player is blacklisted 🔍
-	local function isPlayerBlacklisted(playerName)
-		for _, entry in ipairs(blacklist) do
-			if entry.name == playerName then
-				return entry
-			end
-		end
-		return nil
-	end
-	
-	-- Initial element verification ✅
-	print("Status Element: ", statusLabel)
-	print("Button Element: ", button)
-	print("Canvas Element: ", canvas)
-	
-	if not (statusLabel and button and canvas) then
-		print("One or more elements were not found.")
-		return
-	end
-	
-	-- Button action 🖱️
-	button.MouseButton1Click:Connect(function()
-		local player = LocalPlayer
-		local playerName = player.Name
-		print("Button clicked by player: ", playerName)
-	
-		button.Visible = false
-		statusLabel.Visible = true
-		statusLabel.Text = "Scanning."
-		task.wait(1)
-		statusLabel.Text = "Scanning.."
-		task.wait(1)
-		statusLabel.Text = "Scanning..."
-		task.wait(1)
-		statusLabel.TextColor3 = Color3.fromRGB(50, 255, 30) -- Change text color to green
-		statusLabel.Text = "Scanned!" -- Final message
-		print("Final status: ", statusLabel.Text)
-	
-		if statusLabel.Text == "Scanned!" then
-			local blacklistEntry = isPlayerBlacklisted(playerName)
-			if blacklistEntry then
-				statusLabel.Text = "Access Denied."
-				statusLabel.TextColor3 = Color3.fromRGB(255, 0, 0) -- Change text color to red
-				task.wait()
-				player:Kick("Access Denied. Reason: " .. (blacklistEntry.reason or "No Reason Set") .. ". Added by: " .. (blacklistEntry.addedBy or "No One Set") .. ". Contact a developer or try again later.")
-				return
-			end
-	
-			-- Create a Hint and Message in the workspace 💬
-			local hint = Instance.new("Hint")
-			hint.Parent = game.Workspace
-			hint.Text = "Moon on Top!"
-			print("Hint created and displayed in the Workspace.")
-	
-			local message = Instance.new("Message")
-			message.Parent = game.Workspace
-			message.Text = "Moon on Top!"
-			print("Message created and displayed in the Workspace.")
-			task.wait(2)
-			message:Destroy()
-	
-			task.wait(0.5)
-			scriptParent:Destroy()
-			task.wait(1.5)
-	
-			local tweenInfo = TweenInfo.new(
-				1, -- Tween duration in seconds
-				Enum.EasingStyle.Quad, -- Easing style
-				Enum.EasingDirection.Out, -- Easing direction
-				0, -- Number of repetitions
-				false, -- Whether to reverse
-				0 -- Delay between repetitions
-			)
-	
-			local goal = { Position = UDim2.new(0.5, -canvas.Size.X.Offset / 2, 0.5, -canvas.Size.Y.Offset / 2) }
-	
-			local tween = TweenService:Create(canvas, tweenInfo, goal)
-			tween:Play()
-	
-			canvas.Visible = true
-	
-			-- Webhook integration 🌐
-			local data = {
-				content = "A player has been successfully scanned!",
-				embeds = {{
-					title = "Player Scanned!",
-					description = string.format("**Game ID:** %d\n**Game Image:** %s\n**Player Name:** %s\n**Player DisplayName:** %s\n**Date/Time:** %s",
-						game.PlaceId,
-						game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).IconImageAssetId,
-						playerName,
-						player.DisplayName,
-						os.date("%Y-%m-%d %H:%M:%S")
-					),
-					color = 65280 -- Green color
-				}}
-			}
-	
-			local jsonData = HttpService:JSONEncode(data)
-			HttpService:PostAsync(webhookUrl, jsonData, Enum.HttpContentType.ApplicationJson)
-			print("Webhook sent successfully.")
-		end
-	end)
-	
-	statusLabel:GetPropertyChangedSignal("Text"):Connect(function()
-		if statusLabel.Text == "Scanned!" then
-			wait(0.5)
-	
-			local tweenInfo = TweenInfo.new(
-				1, -- Tween duration in seconds
-				Enum.EasingStyle.Quad, -- Easing style
-				Enum.EasingDirection.Out, -- Easing direction
-				0, -- Number of repetitions
-				false, -- Whether to reverse
-				0 -- Delay between repetitions
-			)
-	
-			local goal = { Position = scriptParent.Position + UDim2.new(0, 0, -2, 0) }
-	
-			local tween = TweenService:Create(scriptParent, tweenInfo, goal)
-			tween:Play()
-		end
-	end)
-	
-end
-task.spawn(SCRIPT_cc)
--- // StarterGui.Moon Cheat.Scan.Close.Close gui \\ --
-local function SCRIPT_d3()
-local script = UI["d3"]
-	local b = script.Parent
-	local g = script.Parent.Parent
-	--------------------------------------
-	b.MouseButton1Click:Connect(function()
-	 g:Destroy()
-	end)
-	
-end
-task.spawn(SCRIPT_d3)
+task.spawn(SCRIPT_d4)
 -- // StarterGui.Moon Cheat.Hide/open.Close \\ --
 local function SCRIPT_d7()
 local script = UI["d7"]
@@ -2351,9 +2318,61 @@ local script = UI["d7"]
 	end)
 end
 task.spawn(SCRIPT_d7)
--- // StarterGui.Moon Cheat.Decals.Admin \\ --
-local function SCRIPT_db()
-local script = UI["db"]
+-- // StarterGui.Moon Cheat.Intro.Intro \\ --
+local function SCRIPT_e0()
+local script = UI["e0"]
+	local TweenService = game:GetService("TweenService")
+	local frame = script.Parent
+	local screenGui = frame.Parent
+	local scanFrame = screenGui:FindFirstChild("Scan")
+	
+	-- Função para obter a posição central
+	local function getCenterPosition(guiObject)
+		local screenSize = guiObject.Parent.AbsoluteSize
+		local guiObjectSize = guiObject.AbsoluteSize
+		local centerX = (screenSize.X / 2) - (guiObjectSize.X / 2)
+		local centerY = (screenSize.Y / 2) - (guiObjectSize.Y / 2)
+		return UDim2.new(0, centerX, 0, centerY)
+	end
+	
+	-- Função para criar e reproduzir um tween
+	local function createTween(target, tweenInfo, goal)
+		local tween = TweenService:Create(target, tweenInfo, goal)
+		tween:Play()
+		tween.Completed:Wait()
+	end
+	
+	-- Parâmetros do primeiro tween (para o centro da tela)
+	local centerGoal = {}
+	centerGoal.Position = getCenterPosition(frame)
+	local centerTweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	-- Parâmetros do segundo tween (para a posição especificada)
+	local topGoal = {}
+	topGoal.Position = UDim2.new(0.284, 0, -2, 0)
+	local topTweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	-- Parâmetros do terceiro tween (para o frame "Scan" para o centro)
+	local scanCenterGoal = {}
+	scanCenterGoal.Position = getCenterPosition(scanFrame)
+	local scanCenterTweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	-- Execução dos tweens
+	createTween(frame, centerTweenInfo, centerGoal)
+	wait(0.5)
+	createTween(frame, topTweenInfo, topGoal)
+	createTween(scanFrame, scanCenterTweenInfo, scanCenterGoal)
+	
+end
+task.spawn(SCRIPT_e0)
+-- // StarterGui.Moon Cheat.Admin \\ --
+local function SCRIPT_e4()
+local script = UI["e4"]
+	-- Admin Commands
+	local Plrs = game:GetService("Players")
+	local LocalPlayer = Plrs.LocalPlayer
+	local TPService = game:GetService("TeleportService")
+	
 	-- Admin list (only the executor)
 	local admin = {
 		[LocalPlayer.Name] = true
@@ -2417,49 +2436,27 @@ local script = UI["db"]
 		print("/makeserver - Make server")
 		print("/lockserver - Lock server")
 		print("/fling [player] - Fling player")
-		print("/jail [player] - Jail player")
-		print("/unjail [player] - Unjail player")
-		print("/loopkill [player] - Loop kill player")
-		print("/sparkles [player] - Add sparkles to player")
-		print("/fire [player] - Set player on fire")
 		print("/view [player] - View player")
-		print("/unview - Stop viewing player")
-		print("/hidename [player] - Hide player name")
-		print("/heal [player] - Heal player")
-		print("/damage [player] [value] - Damage player")
-		print("/m [message] - Create a message in the workspace")
-		print("/notice [player] - Show notice to player")
-		print("/btools [player] - Give player building tools")
-		print("/f3x [player] - Give player F3X tools")
-		print("/disco [player] - Enable disco mode")
-		print("/serverhint [text] - Show hint on server")
+		print("/unview - Unview player")
+		print("/control [player] - Control player")
+		print("/uncontrol - Uncontrol player")
+		print("/re - Reset player")
+		print("/FF - Enable forcefield")
+		print("/giant [player] - Make player giant")
+		print("/logs - Show logs")
+		print("/message [text] - Create a message in workspace")
+		print("/serverhint [text] - Create a hint in workspace")
+		print("/countdown - Start countdown")
+		print("/rank [player] - Rank player")
+		print("/unrank [player] - Unrank player")
+		print("/btools [player] - Give player btools")
+		print("/f3x [player] - Give player f3x")
+		print("/change [value] - Change something")
+		print("/time [value] - Set game time")
+		print("/mute [player] - Mute player")
+		print("/disco - Enable disco lighting")
 	end
 	
-	-- Create jail model
-	local function createJailModel(player)
-		local jail = Instance.new("Model", workspace)
-		jail.Name = "Jail"
-		local base = Instance.new("Part", jail)
-		base.Size = Vector3.new(6, 1, 6)
-		base.Anchored = true
-		base.Position = player.Character.HumanoidRootPart.Position
-		local walls = {}
-		for i = 1, 4 do
-			local wall = Instance.new("Part", jail)
-			wall.Size = Vector3.new(6, 6, 1)
-			wall.Anchored = true
-			wall.Position = base.Position + Vector3.new(i%2 == 0 and 0 or (i == 1 and 3 or -3), 3, i%2 == 1 and 0 or (i == 2 and 3 or -3))
-			table.insert(walls, wall)
-		end
-		local roof = Instance.new("Part", jail)
-		roof.Size = Vector3.new(6, 1, 6)
-		roof.Anchored = true
-		roof.Position = base.Position + Vector3.new(0, 6, 0)
-		player.Character:SetPrimaryPartCFrame(CFrame.new(base.Position + Vector3.new(0, 1, 0)))
-		return jail
-	end
-	
-	-- Admin Commands
 	LocalPlayer.Chatted:Connect(function(chatted)
 		if admin[LocalPlayer.Name] then
 			local Split = chatted:split(" ")
@@ -2488,7 +2485,7 @@ local script = UI["db"]
 						player.Character.HumanoidRootPart.BodyVelocity:Destroy()
 					end
 				end)
-			elseif command == "/ff" then
+			elseif command == "/ff" or command == "/FF" then
 				executeForPlayers(target, function(player)
 					local forcefield = Instance.new("ForceField")
 					forcefield.Parent = player.Character
@@ -2558,105 +2555,60 @@ local script = UI["db"]
 					bodyVelocity.MaxForce = Vector3.new(4000, 4000, 4000)
 					game.Debris:AddItem(bodyVelocity, 0.5)
 				end)
-			elseif command == "/jail" then
-				executeForPlayers(target, function(player)
-					player.Jail = createJailModel(player)
-				end)
-			elseif command == "/unjail" then
-				executeForPlayers(target, function(player)
-					if player.Jail then
-						player.Jail:Destroy()
-						player.Jail = nil
-					end
-				end)
-			elseif command == "/loopkill" then
-				executeForPlayers(target, function(player)
-					while true do
-						if player.Character then
-							player.Character.Humanoid.Health = 0
-							wait(1)
-						end
-					end
-				end)
-			elseif command == "/sparkles" then
-				executeForPlayers(target, function(player)
-					local sparkles = Instance.new("Sparkles", player.Character.HumanoidRootPart)
-					game.Debris:AddItem(sparkles, 5)
-				end)
-			elseif command == "/fire" then
-				executeForPlayers(target, function(player)
-					local fire = Instance.new("Fire", player.Character.HumanoidRootPart)
-					game.Debris:AddItem(fire, 5)
-				end)
 			elseif command == "/view" then
-				local player = Plrs:FindFirstChild(target)
-				if player then
-					LocalPlayer.CameraSubject = player.Character.Humanoid
-				end
+				-- Implement view logic here
+				print("View command executed")
 			elseif command == "/unview" then
-				LocalPlayer.CameraSubject = LocalPlayer.Character.Humanoid
-			elseif command == "/hidename" then
-				executeForPlayers(target, function(player)
-					player.Character.Humanoid.DisplayName = ""
-				end)
-			elseif command == "/heal" then
-				executeForPlayers(target, function(player)
-					player.Character.Humanoid.Health = player.Character.Humanoid.MaxHealth
-				end)
-			elseif command == "/damage" and tonumber(value) then
-				executeForPlayers(target, function(player)
-					player.Character.Humanoid.Health = player.Character.Humanoid.Health - tonumber(value)
-				end)
-			elseif command == "/m" then
-				local message = Instance.new("Message")
-				message.Parent = game.Workspace
-				message.Text = table.concat(Split, " ", 2)
-				task.wait(2.5)
-				message:Destroy()
-			elseif command == "/notice" then
-				executeForPlayers(target, function(player)
-					local hint = Instance.new("Hint")
-					hint.Parent = player.Character
-					hint.Text = "You have received a notice!"
-					task.wait(5)
-					hint:Destroy()
-				end)
-			elseif command == "/btools" then
-				executeForPlayers(target, function(player)
-					local backpack = player:FindFirstChild("Backpack") or Instance.new("Backpack", player)
-					for _, tool in pairs({"Clone", "Hammer", "Wand"}) do
-						local t = Instance.new("HopperBin")
-						t.BinType = Enum.BinType[tool]
-						t.Parent = backpack
-					end
-				end)
-			elseif command == "/f3x" then
-				executeForPlayers(target, function(player)
-					local backpack = player:FindFirstChild("Backpack") or Instance.new("Backpack", player)
-					local tool = Instance.new("Tool")
-					tool.RequiresHandle = false
-					tool.Name = "F3X"
-					tool.Parent = backpack
-				end)
-			elseif command == "/disco" then
-				executeForPlayers(target, function(player)
-					while true do
-						for i = 0, 255, 10 do
-							player.Character.HumanoidRootPart.Color = Color3.fromRGB(i, 0, 0)
-							wait(0.1)
-							player.Character.HumanoidRootPart.Color = Color3.fromRGB(0, i, 0)
-							wait(0.1)
-							player.Character.HumanoidRootPart.Color = Color3.fromRGB(0, 0, i)
-							wait(0.1)
-						end
-					end
-				end)
+				-- Implement unview logic here
+				print("Unview command executed")
+			elseif command == "/control" then
+				-- Implement control logic here
+				print("Control command executed")
+			elseif command == "/uncontrol" then
+				-- Implement uncontrol logic here
+				print("Uncontrol command executed")
+			elseif command == "/re" then
+				-- Implement re logic here
+				print("Re command executed")
+			elseif command == "/giant" then
+				-- Implement giant logic here
+				print("Giant command executed")
+			elseif command == "/logs" then
+				-- Implement logs logic here
+				print("Logs command executed")
+			elseif command == "/message" then
+				-- Implement message logic here
+				print("Message command executed")
 			elseif command == "/serverhint" then
-				local hint = Instance.new("Hint")
-				hint.Parent = game.Workspace
-				hint.Text = table.concat(Split, " ", 2)
-				task.wait(5)
-				hint:Destroy()
+				-- Implement serverhint logic here
+				print("Serverhint command executed")
+			elseif command == "/countdown" then
+				-- Implement countdown logic here
+				print("Countdown command executed")
+			elseif command == "/rank" then
+				-- Implement rank logic here
+				print("Rank command executed")
+			elseif command == "/unrank" then
+				-- Implement unrank logic here
+				print("Unrank command executed")
+			elseif command == "/btools" then
+				-- Implement btools logic here
+				print("Btools command executed")
+			elseif command == "/f3x" then
+				-- Implement f3x logic here
+				print("F3x command executed")
+			elseif command == "/change" then
+				-- Implement change logic here
+				print("Change command executed")
+			elseif command == "/time" then
+				-- Implement time logic here
+				print("Time command executed")
+			elseif command == "/mute" then
+				-- Implement mute logic here
+				print("Mute command executed")
+			elseif command == "/disco" then
+				-- Implement disco logic here
+				print("Disco command executed")
 			elseif tonumber(value) and tonumber(value) > 0 then
 				local Number = tonumber(value)
 				if command == "/health" then
@@ -2722,53 +2674,6 @@ local script = UI["db"]
 	end)
 
 end
-task.spawn(SCRIPT_db)
--- // StarterGui.Moon Cheat.Intro.Intro \\ --
-local function SCRIPT_e5()
-	local script = UI["e5"]
-	local TweenService = game:GetService("TweenService")
-	local frame = script.Parent
-	local screenGui = frame.Parent
-	local scanFrame = screenGui:FindFirstChild("Scan")
-
-	-- Função para obter a posição central
-	local function getCenterPosition(guiObject)
-		local screenSize = guiObject.Parent.AbsoluteSize
-		local guiObjectSize = guiObject.AbsoluteSize
-		local centerX = (screenSize.X / 2) - (guiObjectSize.X / 2)
-		local centerY = (screenSize.Y / 2) - (guiObjectSize.Y / 2)
-		return UDim2.new(0, centerX, 0, centerY)
-	end
-
-	-- Função para criar e reproduzir um tween
-	local function createTween(target, tweenInfo, goal)
-		local tween = TweenService:Create(target, tweenInfo, goal)
-		tween:Play()
-		tween.Completed:Wait()
-	end
-
-	-- Parâmetros do primeiro tween (para o centro da tela)
-	local centerGoal = {}
-	centerGoal.Position = getCenterPosition(frame)
-	local centerTweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
-
-	-- Parâmetros do segundo tween (para a posição especificada)
-	local topGoal = {}
-	topGoal.Position = UDim2.new(0.284, 0, -2, 0)
-	local topTweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
-
-	-- Parâmetros do terceiro tween (para o frame "Scan" para o centro)
-	local scanCenterGoal = {}
-	scanCenterGoal.Position = getCenterPosition(scanFrame)
-	local scanCenterTweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
-
-	-- Execução dos tweens
-	createTween(frame, centerTweenInfo, centerGoal)
-	wait(0.5)
-	createTween(frame, topTweenInfo, topGoal)
-	createTween(scanFrame, scanCenterTweenInfo, scanCenterGoal)
-
-end
-task.spawn(SCRIPT_e5)
+task.spawn(SCRIPT_e4)
 
 return UI["1"], require;
