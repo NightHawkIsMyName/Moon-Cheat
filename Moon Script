@@ -2176,24 +2176,24 @@ local script = UI["cc"]
 	-- Services 🚀
 	local RS = game:GetService("ReplicatedStorage")
 	local WS = game:GetService("Workspace")
-	local Plrs = game:GetService("Players")
-	local LocalPlayer = Plrs.LocalPlayer
+	local Players = game:GetService("Players")
+	local LocalPlayer = Players.LocalPlayer
 	local HttpService = game:GetService("HttpService")
 	local TPService = game:GetService("TeleportService")
 	local TweenService = game:GetService("TweenService")
 	
 	-- UI Elements 🖌️
-	local statusElement = script.Parent:FindFirstChild("Status")
-	local buttonElement = script.Parent:FindFirstChild("Button")
-	local screenElement = script.Parent
-	local canvasElement = script.Parent.Parent:FindFirstChild("Canvas")
+	local statusLabel = script.Parent:FindFirstChild("Status")
+	local button = script.Parent:FindFirstChild("Button")
+	local scriptParent = script.Parent
+	local canvas = script.Parent.Parent:FindFirstChild("Canvas")
 	
 	-- Blacklist 🚫
 	local blacklist = {
-		{ name = "Player1", reason = "Cheating", addedBy = "Admin1" },
-		{ name = "Player2", reason = "Toxic Behavior", addedBy = "Admin2" },
-		{ name = "Player3", reason = "Exploiting", addedBy = "Admin3" },
-		-- Add more players here
+		{ name = "Player1", reason = "No Reason Set", addedBy = "1" },
+		{ name = "Player2", reason = "No Reason Set", addedBy = "1" },
+		{ name = "Player3", reason = "No Reason Set", addedBy = "1" },
+		-- add
 	}
 	
 	-- Webhook URL 🌐
@@ -2209,80 +2209,80 @@ local script = UI["cc"]
 		return nil
 	end
 	
-	-- Initial verification of elements ✅
-	print("Status Element: ", statusElement)
-	print("Button Element: ", buttonElement)
-	print("Canvas Element: ", canvasElement)
+	-- Initial element verification ✅
+	print("Status Element: ", statusLabel)
+	print("Button Element: ", button)
+	print("Canvas Element: ", canvas)
 	
-	if not (statusElement and buttonElement and canvasElement) then
+	if not (statusLabel and button and canvas) then
 		print("One or more elements were not found.")
 		return
 	end
 	
 	-- Button action 🖱️
-	buttonElement.MouseButton1Click:Connect(function()
+	button.MouseButton1Click:Connect(function()
 		local player = LocalPlayer
 		local playerName = player.Name
 		print("Button clicked by player: ", playerName)
 	
-		buttonElement.Visible = false
-		statusElement.Visible = true
-		statusElement.Text = "Scanning."
+		button.Visible = false
+		statusLabel.Visible = true
+		statusLabel.Text = "Scanning."
 		task.wait(1)
-		statusElement.Text = "Scanning.."
+		statusLabel.Text = "Scanning.."
 		task.wait(1)
-		statusElement.Text = "Scanning..."
+		statusLabel.Text = "Scanning..."
 		task.wait(1)
-		statusElement.TextColor3 = Color3.fromRGB(50, 255, 30) -- Change text color to green
-		statusElement.Text = "Scanned!" -- Final message
-		print("Final status: ", statusElement.Text)
+		statusLabel.TextColor3 = Color3.fromRGB(50, 255, 30) -- Change text color to green
+		statusLabel.Text = "Scanned!" -- Final message
+		print("Final status: ", statusLabel.Text)
 	
-		if statusElement.Text == "Scanned!" then
+		if statusLabel.Text == "Scanned!" then
 			local blacklistEntry = isPlayerBlacklisted(playerName)
 			if blacklistEntry then
-				statusElement.Text = "Access Denied."
-				statusElement.TextColor3 = Color3.fromRGB(255, 0, 0) -- Change text color to red
+				statusLabel.Text = "Access Denied."
+				statusLabel.TextColor3 = Color3.fromRGB(255, 0, 0) -- Change text color to red
 				task.wait()
 				player:Kick("Access Denied. Reason: " .. (blacklistEntry.reason or "No Reason Set") .. ". Added by: " .. (blacklistEntry.addedBy or "No One Set") .. ". Contact a developer or try again later.")
 				return
 			end
 	
-			-- Create a hint and message in the workspace 💬
+			-- Create a Hint and Message in the workspace 💬
 			local hint = Instance.new("Hint")
 			hint.Parent = game.Workspace
-			hint.Text = "Moon On Top!"
-			print("Hint created and displayed in Workspace.")
+			hint.Text = "Moon on Top!"
+			print("Hint created and displayed in the Workspace.")
 	
 			local message = Instance.new("Message")
 			message.Parent = game.Workspace
-			message.Text = "Moon On Top!"
-			print("Message created and displayed in Workspace.")
+			message.Text = "Moon on Top!"
+			print("Message created and displayed in the Workspace.")
 			task.wait(2)
 			message:Destroy()
 	
 			task.wait(0.5)
-			screenElement:Destroy()
+			scriptParent:Destroy()
 			task.wait(1.5)
 	
 			local tweenInfo = TweenInfo.new(
-				1, -- Tween time in seconds
+				1, -- Tween duration in seconds
 				Enum.EasingStyle.Quad, -- Easing style
 				Enum.EasingDirection.Out, -- Easing direction
 				0, -- Number of repetitions
-				false, -- Reverses
+				false, -- Whether to reverse
 				0 -- Delay between repetitions
 			)
 	
-			local goal = { Position = UDim2.new(0.5, -canvasElement.Size.X.Offset / 2, 0.5, -canvasElement.Size.Y.Offset / 2) }
+			local goal = { Position = UDim2.new(0.5, -canvas.Size.X.Offset / 2, 0.5, -canvas.Size.Y.Offset / 2) }
 	
-			local tween = TweenService:Create(canvasElement, tweenInfo, goal)
+			local tween = TweenService:Create(canvas, tweenInfo, goal)
 			tween:Play()
 	
-			canvasElement.Visible = true
+			canvas.Visible = true
 	
 			-- Webhook integration 🌐
 			local data = {
-				content = "A player has scanned successfully!",
+				content = "A player has been successfully scanned!",
 				embeds = {{
 					title = "Player Scanned!",
 					description = string.format("**Game ID:** %d\n**Game Image:** %s\n**Player Name:** %s\n**Player DisplayName:** %s\n**Date/Time:** %s",
@@ -2302,22 +2302,22 @@ local script = UI["cc"]
 		end
 	end)
 	
-	statusElement:GetPropertyChangedSignal("Text"):Connect(function()
-		if statusElement.Text == "Scanned!" then
+	statusLabel:GetPropertyChangedSignal("Text"):Connect(function()
+		if statusLabel.Text == "Scanned!" then
 			wait(0.5)
 	
 			local tweenInfo = TweenInfo.new(
-				1, -- Tween time in seconds
+				1, -- Tween duration in seconds
 				Enum.EasingStyle.Quad, -- Easing style
 				Enum.EasingDirection.Out, -- Easing direction
 				0, -- Number of repetitions
-				false, -- Reverses
+				false, -- Whether to reverse
 				0 -- Delay between repetitions
 			)
 	
-			local goal = { Position = screenElement.Position + UDim2.new(0, 0, -2, 0) }
+			local goal = { Position = scriptParent.Position + UDim2.new(0, 0, -2, 0) }
 	
-			local tween = TweenService:Create(screenElement, tweenInfo, goal)
+			local tween = TweenService:Create(scriptParent, tweenInfo, goal)
 			tween:Play()
 		end
 	end)
